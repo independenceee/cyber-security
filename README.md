@@ -1,297 +1,113 @@
-Chương 1 Quiz – Giới thiệu về Ethical Hacking và Penetration Testing
-1.	Câu hỏi: Phát biểu nào mô tả đúng nhất về khái niệm ethical hacker?
-o	Người mô phỏng một kẻ tấn công để đánh giá tình trạng bảo mật của mạng.
-2.	Câu hỏi: Thuật ngữ nào mô tả nhóm tội phạm mạng có tài trợ tốt và động cơ mạnh mẽ, sử dụng các kỹ thuật tấn công mới nhất để đạt được lợi nhuận tài chính?
-o	Tội phạm có tổ chức
-3.	Câu hỏi: Loại tác nhân đe dọa nào sử dụng tội phạm mạng để đánh cắp dữ liệu nhạy cảm và công khai nhằm làm xấu mặt mục tiêu?
-o	Hacktivist
-4.	Câu hỏi: Tấn công được nhà nước bảo trợ là gì?
-o	Tấn công do chính phủ thực hiện để làm gián đoạn hoặc đánh cắp thông tin từ quốc gia khác.
-Giải thích: Tấn công mạng do nhà nước tài trợ thường liên quan đến chiến tranh hoặc gián điệp mạng.
-5.	Câu hỏi: Tấn công nội bộ là gì?
-o	Tấn công bởi nhân viên bất mãn trong tổ chức.
-Giải thích: Mối đe dọa nội bộ xuất phát từ bên trong tổ chức, thường là nhân viên bị lừa hoặc hành động có ác ý.
-6.	Câu hỏi: Kiểm tra thâm nhập ứng dụng nhằm đánh giá loại lỗ hổng bảo mật nào?
-o	Lỗi logic (logic flaws)
-Giải thích: Kiểm tra ứng dụng tập trung vào các lỗi như sai cấu hình, vấn đề kiểm tra đầu vào, và lỗi logic.
-7.	Câu hỏi: Hai tài nguyên nào được kiểm tra trong kiểm tra thâm nhập cơ sở hạ tầng mạng?
-o	Máy chủ AAA (AAA servers)
-o	Hệ thống ngăn chặn xâm nhập (IPSs)
-Giải thích: Các bài kiểm tra này tập trung vào định tuyến, firewall, và tài nguyên hỗ trợ.
-8.	Câu hỏi: Khi kiểm tra ứng dụng web, cần kiểm tra truy cập vào tài nguyên nào?
-o	Cơ sở dữ liệu phụ trợ (Back-end databases)
-Giải thích: Ứng dụng web thường liên kết với cơ sở dữ liệu, đây là phần cần được kiểm tra.
-9.	Câu hỏi: Mục đích của chương trình bug bounty là gì?
-o	Thưởng cho các chuyên gia an ninh khi phát hiện lỗ hổng bảo mật.
-Giải thích: Các tổ chức sử dụng bug bounty để sửa lỗi trước khi bị khai thác.
-10.	Câu hỏi: Bài kiểm tra thâm nhập môi trường bán biết được đặc trưng bởi điều gì?
-o	Là một cách tiếp cận lai giữa kiểm tra không biết và biết trước.
-Giải thích: Người kiểm tra được cung cấp một số thông tin như tài khoản nhưng không đủ tài liệu hạ tầng mạng.
-       	   11. Bài kiểm tra thâm nhập môi trường đã biết (Known Environment Test) có đặc điểm gì?
-•	Người kiểm tra được cung cấp sơ đồ mạng, địa chỉ IP, cấu hình và thông tin đăng nhập người dùng.
-•	Giải thích: Trong bài kiểm tra thâm nhập môi trường đã biết (trước đây gọi là "white box"), người kiểm tra bắt đầu với nhiều thông tin chi tiết về tổ chức và hạ tầng. Mục tiêu là tìm ra càng nhiều lỗ hổng càng tốt.
-________________________________________
-12. Loại kiểm tra thâm nhập nào chỉ cung cấp thông tin hạn chế, như tên miền và địa chỉ IP nằm trong phạm vi?
-•	Kiểm tra môi trường chưa biết (Unknown Environment Test).
-•	Giải thích: Trong kiểm tra môi trường chưa biết (trước đây gọi là "black box"), người kiểm tra chỉ nhận được rất ít thông tin và cần bắt đầu từ quan điểm của một kẻ tấn công bên ngoài.
-________________________________________
-13. Khớp các phương pháp kiểm tra thâm nhập với mô tả tương ứng:
-•	MITRE ATT&CK: Bộ tập hợp các ma trận chiến thuật và kỹ thuật mà kẻ tấn công sử dụng khi chuẩn bị tấn công.
-•	OWASP WSTG: Hướng dẫn chi tiết về kiểm tra bảo mật ứng dụng web.
-•	NIST SP 800-115: Cung cấp hướng dẫn lập kế hoạch và thực hiện kiểm tra bảo mật thông tin.
-•	OSSTMM: Đưa ra các phương pháp kiểm tra bảo mật nhất quán và có thể lặp lại.
-•	PTES: Cung cấp thông tin về các kiểu tấn công và phương pháp thực hiện.
-________________________________________
-14. Ba giai đoạn trong Chuẩn thực thi kiểm tra thâm nhập (PTES) là gì? (Chọn ba)
-•	Mô hình hóa mối đe dọa (Threat Modeling)
-•	Khai thác (Exploitation)
-•	Báo cáo (Reporting)
-•	Giải thích: PTES bao gồm 7 giai đoạn chính: Tương tác trước dự án, Thu thập thông tin, Mô hình hóa mối đe dọa, Phân tích lỗ hổng, Khai thác, Hậu khai thác, và Báo cáo.
-________________________________________
-15. Hai giai đoạn nào thuộc Khung đánh giá bảo mật hệ thống thông tin (ISSAF)? (Chọn hai)
-•	Tương tác trước dự án (Pre-engagement interactions)
-•	Xác định lỗ hổng (Vulnerability identification)
-•	Giải thích: ISSAF bao gồm các giai đoạn: Thu thập thông tin, Lập bản đồ mạng, Xác định lỗ hổng, Thâm nhập, Duy trì quyền truy cập, và Xóa dấu vết.
-________________________________________
-16. Hai giai đoạn nào thuộc Hướng dẫn kiểm tra bảo mật nguồn mở (OSSTMM)? (Chọn hai)
-•	Phân tích lỗ hổng (Vulnerability Analysis)
-•	Phân tích niềm tin (Trust Analysis)
-•	Giải thích: OSSTMM gồm các phần: Phân tích niềm tin, Lưu đồ công việc, Kiểm tra bảo mật vật lý, Kiểm tra bảo mật mạng dữ liệu, và Báo cáo với Báo cáo kiểm tra bảo mật (STAR).
-________________________________________
-17. Phương pháp kiểm tra thâm nhập nào là hướng dẫn toàn diện tập trung vào kiểm tra ứng dụng web?
-•	OWASP WSTG.
-•	Giải thích: OWASP WSTG là một hướng dẫn chi tiết, tập trung vào kiểm tra bảo mật ứng dụng web và các phương pháp thực hiện kiểm tra.
-________________________________________
-18. Hệ điều hành Linux nào bao gồm các công cụ và tài nguyên kiểm tra thâm nhập?
-•	BlackArch.
-•	Giải thích: BlackArch, Kali Linux, và Parrot OS là các bản phân phối Linux bao gồm các công cụ kiểm tra thâm nhập.
-________________________________________
-19. Địa chỉ URL Linux nào cung cấp môi trường học tập thuận tiện về các công cụ và phương pháp kiểm tra bảo mật?
-•	parrotsec.org.
-•	Giải thích: Các bản phân phối như Kali Linux, Parrot OS, và BlackArch cung cấp môi trường học tập tiện lợi với các công cụ kiểm tra bảo mật.
-________________________________________
-20. Yêu cầu "Giám sát sức khỏe (Health Monitoring)" có ý nghĩa gì khi thiết lập môi trường kiểm tra thâm nhập?
-•	Người kiểm tra cần xác định nguyên nhân khi có sự cố xảy ra.
-•	Giải thích: "Giám sát sức khỏe" đảm bảo khi hệ thống gặp sự cố, nguyên nhân được xác định. Các yêu cầu khác bao gồm mạng kín, tài nguyên phần cứng đủ, và sử dụng các công cụ trùng lặp để xác minh kết quả.
-•	21. Công cụ nào hữu ích khi thực hiện kiểm tra thâm nhập cơ sở hạ tầng mạng?
-•	Công cụ vượt qua firewall và hệ thống ngăn chặn xâm nhập (IPS).
-Giải thích: Công cụ kiểm tra thâm nhập mạng thường bao gồm các công cụ để theo dõi hoặc thao túng lưu lượng, tấn công quá tải thiết bị mạng, và vượt qua firewall cùng IPS.
-•	________________________________________
-•	22. Công cụ nào nên được sử dụng để thực hiện kiểm tra thâm nhập dựa trên ứng dụng?
-•	Công cụ proxy đánh chặn.
-Giải thích: Kiểm tra thâm nhập ứng dụng bao gồm các công cụ phát hiện lỗ hổng web và các công cụ kiểm tra thủ công, như proxy đánh chặn.
-•	________________________________________
-•	23. Công cụ nào nên được sử dụng để kiểm tra thâm nhập hạ tầng không dây?
-Công cụ vô hiệu hóa thiết bị mạng.
-Giải thích: Kiểm tra hạ tầng không dây thường sử dụng các công cụ bẻ khóa mã hóa không dây, vô hiệu hóa thiết bị mạng, và thực hiện các cuộc tấn công trung gian (man-in-the-middle).
-•	________________________________________
-•	24. Công cụ nào nên được sử dụng để kiểm tra các nền tảng máy chủ và khách hàng trong môi trường?
-•	Công cụ quét lỗ hổng.
-Giải thích: Công cụ quét lỗ hổng tự động có thể được sử dụng để xác định các vấn đề như phần mềm lỗi thời và cấu hình sai. Đối với kiểm tra độ mạnh của giao thức, các công cụ fuzzing thường được sử dụng.
-•	________________________________________
-•	25. Nếu một hệ thống không thể được ảo hóa để kiểm tra thâm nhập đúng cách, hành động nào nên được thực hiện?
-•	Sao lưu toàn bộ hệ thống.
-Giải thích: Trong trường hợp không thể ảo hóa hệ thống, việc có một bản sao lưu toàn bộ hệ thống hoặc môi trường là rất cần thiết để đảm bảo khả năng khôi phục nếu xảy ra sự cố trong quá trình kiểm tra.
-Chương 2 Quiz – Giới thiệu về Ethical Hacking và Penetration Testing
-1. Một nhà thầu được thuê để thực hiện đánh giá lỗ hổng an ninh mạng tại một cơ sở khám chữa bệnh địa phương. Quy định của chính phủ Mỹ nào nhà thầu phải hiểu trước khi bắt đầu?
-•	HIPAA
-Giải thích: Đạo luật HIPAA yêu cầu bảo vệ thông tin sức khỏe điện tử cá nhân và cho phép quyền truy cập hợp lý bởi các nhà cung cấp dịch vụ chăm sóc sức khỏe.
-________________________________________
-2. Văn phòng IRS tại New York đang cân nhắc chuyển một số dịch vụ lên nền tảng điện toán đám mây. Quy định nào của chính phủ Mỹ họ cần tuân theo?
-•	FedRAMP
-Giải thích: Chương trình FedRAMP cung cấp cách tiếp cận tiêu chuẩn hóa về bảo mật cho các dịch vụ điện toán đám mây của chính phủ Mỹ.
-________________________________________
-3. Một đại học ở California dự định cung cấp các khóa học trực tuyến cho các sinh viên ở Pháp và Đức. Quy định nào cần tuân thủ?
-•	GDPR
-Giải thích: Quy định GDPR của châu Âu yêu cầu bảo vệ dữ liệu cá nhân và quyền riêng tư, áp dụng trên toàn cầu khi xử lý dữ liệu công dân EU.
-________________________________________
-4. Cơ quan nào chịu trách nhiệm thực thi Quy tắc Bảo mật Thông tin Tài chính của Đạo luật GLB?
-•	Ủy ban Thương mại Liên bang (FTC)
-Giải thích: FTC chịu trách nhiệm thực thi các quy định liên quan đến bảo mật thông tin tài chính theo Đạo luật GLB.
-________________________________________
-5. Trong lĩnh vực y tế, thuật ngữ nào mô tả một đơn vị xử lý thông tin y tế không tiêu chuẩn thành định dạng tiêu chuẩn?
-•	Healthcare Clearinghouse
-Giải thích: Đây là đơn vị xử lý thông tin y tế không tiêu chuẩn từ các tổ chức khác và chuyển thành định dạng tiêu chuẩn.
-________________________________________
-6. Thuật ngữ nào dùng để chỉ một đơn vị cung cấp thanh toán cho các dịch vụ y tế?
-•	Health Plan
-Giải thích: Health Plan là các chương trình bảo hiểm sức khỏe cung cấp thanh toán cho dịch vụ y tế, như Medicare hoặc Medicaid.
-________________________________________
-7. Trong thương mại điện tử, yếu tố nào quyết định việc áp dụng các yêu cầu PCI DSS?
-•	Số tài khoản chính (Primary Account Number - PAN)
-Giải thích: PAN quyết định việc áp dụng PCI DSS khi số này được lưu trữ, xử lý hoặc truyền tải.
-________________________________________
-8. Hai ví dụ về dữ liệu xác thực nhạy cảm liên quan đến thẻ thanh toán cần tuân thủ PCI DSS là gì?
-•	Dữ liệu đầy đủ từ dải từ hoặc dữ liệu tương đương trên chip.
-•	Mã CAV2/CVC2/CVV2/CID.
-Giải thích: Dữ liệu xác thực nhạy cảm bao gồm mã bảo mật và dữ liệu từ dải từ hoặc chip.
-________________________________________
-9. Ghép các phần trong NIST SP 800-57 với mô tả tương ứng:
-•	Phần 1: Hướng dẫn chung: Cung cấp hướng dẫn và thực hành tốt nhất về quản lý khóa mã hóa.
-•	Phần 2: Thực hành tốt nhất cho tổ chức quản lý khóa: Cung cấp hướng dẫn về chính sách và yêu cầu lập kế hoạch bảo mật.
-•	Phần 3: Hướng dẫn quản lý khóa theo ứng dụng: Cung cấp hướng dẫn sử dụng các tính năng mã hóa trong hệ thống hiện tại.
-________________________________________
-10. Nhân viên được giao nhiệm vụ đánh giá hệ thống của các tổ chức tài chính tại châu Âu cần có gì trước khi thực hiện?
-•	Tài liệu cho phép thực hiện kiểm tra từ các tổ chức khách hàng.
-Giải thích: Phải có tài liệu rõ ràng từ khách hàng cấp phép cho các hoạt động kiểm tra, đảm bảo tuân thủ luật pháp địa phương.
-________________________________________
-11. Công ty thuê chuyên gia an ninh mạng để kiểm tra thâm nhập. Tài liệu pháp lý nào quy định kỳ vọng, hạn chế, thời gian và chi phí?
-•	Service-Level Agreement (SLA).
-Giải thích: SLA là thỏa thuận chi tiết các tiêu chí về hiệu suất, thời gian và chi phí dịch vụ kiểm tra.
-________________________________________
-12. Tài liệu nào mô tả các công việc cụ thể cần thực hiện trong kiểm tra thâm nhập?
-•	Statement of Work (SOW).
-Giải thích: SOW bao gồm chi tiết công việc, phạm vi dự án, lịch trình, và yêu cầu thanh toán.
-________________________________________
-13. Công ty muốn đảm bảo rằng nhà tư vấn không tiết lộ thông tin cho bên thứ ba. Loại thỏa thuận NDA nào nên áp dụng?
-•	Unilateral NDA.
-Giải thích: Đây là thỏa thuận trong đó một bên cung cấp thông tin và bên kia cam kết không tiết lộ.
-•	14. Công ty thuê chuyên gia an ninh mạng thực hiện kiểm tra thâm nhập để đánh giá tuân thủ quy định của chính phủ. Tài liệu nào phải được cung cấp cho chuyên gia để chỉ định thỏa thuận giữa hai bên?
-•	Hợp đồng (Contract).
-Giải thích: Hợp đồng là một trong những tài liệu quan trọng nhất trong kiểm tra thâm nhập. Nó chỉ rõ các điều khoản, cách thức thanh toán, và tài liệu hóa rõ ràng các dịch vụ sẽ được thực hiện.
-•	________________________________________
-•	15. Khi chuẩn bị báo cáo cuối cùng, phần nào của báo cáo nên nêu rõ các giới hạn của công việc đã thực hiện?
-•	Phần từ chối trách nhiệm (Disclaimers).
-Giải thích: Phần từ chối trách nhiệm trong báo cáo hoặc tài liệu trước dự án nhằm giảm bớt trách nhiệm liên quan, do các mối đe dọa an ninh mạng thay đổi liên tục và không thể đảm bảo mọi lỗ hổng đều được phát hiện.
-•	________________________________________
-•	16. Ba ví dụ về các yếu tố thông thường trong tài liệu Quy tắc Tham gia (Rules of Engagement) là gì?
-•	Thời gian kiểm tra (Testing Timeline).
-•	Vị trí kiểm tra (Location of Testing).
-•	Phương pháp liên lạc ưa thích (Preferred Method of Communication).
-Giải thích: Tài liệu Quy tắc Tham gia quy định các điều kiện dưới đó kiểm tra thâm nhập sẽ được thực hiện, bao gồm thời gian, địa điểm, và phương pháp liên lạc.
-•	________________________________________
-•	17. Yếu tố nào trong tài liệu Quy tắc Tham gia quy định các bài kiểm tra được phép hoặc không được phép?
-•	Loại kiểm tra được phép hoặc không được phép (Types of Allowed or Disallowed Tests).
-Giải thích: Yếu tố này chỉ định các bài kiểm tra cụ thể được phép hoặc không được phép thực hiện trong quá trình kiểm tra thâm nhập.
-•	________________________________________
-•	18. Tài liệu nào cung cấp thông tin về ngôn ngữ XML dùng để mô tả chức năng của dịch vụ web?
-•	Web Services Description Language (WSDL) Document.
-Giải thích: WSDL là ngôn ngữ dựa trên XML để tài liệu hóa chức năng của các dịch vụ web.
-•	________________________________________
-•	19. Tài liệu nào cung cấp thông tin về ngôn ngữ truy vấn cho APIs và thực thi truy vấn ở thời gian thực?
-•	GraphQL Documentation.
-Giải thích: GraphQL là ngôn ngữ truy vấn cho APIs và là ngôn ngữ phía máy chủ để thực thi truy vấn với hệ thống kiểu do người dùng định nghĩa.
-•	________________________________________
-•	20. Tài liệu nào giúp nhà tư vấn định nghĩa và tài liệu hóa các hệ thống trong phạm vi kiểm tra?
-•	Sơ đồ kiến trúc hệ thống và mạng (System and Network Architectural Diagram).
-Giải thích: Sơ đồ này rất hữu ích trong việc định nghĩa và tài liệu hóa các hệ thống nằm trong phạm vi kiểm tra.
-•	________________________________________
-•	21. Nguyên nhân nào dẫn đến sự mở rộng không kiểm soát của phạm vi công việc (Scope Creep)?
-•	Nhận diện không hiệu quả các yếu tố kỹ thuật và phi kỹ thuật cần thiết.
-Giải thích: Scope Creep xảy ra khi phạm vi công việc mở rộng không kiểm soát do quản lý thay đổi kém hoặc giao tiếp không hiệu quả giữa các bên liên quan.
-•	________________________________________
-•	22. Bước đầu tiên của nhà tư vấn trong việc xác nhận phạm vi công việc là gì?
-•	Hỏi người liên hệ của công ty và xem xét hợp đồng.
-Giải thích: Việc xác nhận phạm vi công việc bắt đầu bằng cách hiểu rõ đối tượng mục tiêu và các yếu tố liên quan đến kiểm tra thâm nhập.
-•	________________________________________
-•	23. Hai giao thức nào nên được xem xét để trao đổi email an toàn?
-•	PGP (Pretty Good Privacy).
-•	S/MIME (Secure/Multipurpose Internet Mail Extensions).
-Giải thích: PGP và S/MIME cung cấp khả năng mã hóa để đảm bảo bảo mật cho việc trao đổi email.
-•	________________________________________
-•	24. Thuật ngữ kiểm tra môi trường chưa biết (Unknown Environment Testing) được mô tả như thế nào?
-•	Nhà tư vấn được cung cấp rất ít thông tin về hệ thống và mạng mục tiêu.
-Giải thích: Trong kiểm tra môi trường chưa biết, nhà tư vấn bắt đầu với góc nhìn của một kẻ tấn công bên ngoài, chỉ được cung cấp thông tin hạn chế như tên miền và địa chỉ IP.
-•	________________________________________
-•	25. Sự khác biệt chính giữa kiểm tra môi trường chưa biết và môi trường đã biết là gì?
-•	Lượng thông tin được cung cấp cho nhà tư vấn.
-Giải thích: Trong kiểm tra môi trường chưa biết, thông tin cung cấp rất hạn chế, trong khi kiểm tra môi trường đã biết bắt đầu với thông tin đầy đủ về hạ tầng tổ chức.
-Chương 3 Quiz – Giới thiệu về Ethical Hacking và Penetration Testing
-1. Hai công cụ nào có thể được sử dụng để thu thập thông tin DNS một cách thụ động?
-•	Recon-ng
-•	Dig
-2. Lệnh Linux nào có thể được sử dụng để xác định thông tin kỹ thuật và quản trị của một tên miền trong khi thực hiện thu thập thông tin thụ động?
-•	whois
-3. Định dạng nào xác định cách hình ảnh và tệp âm thanh lưu trữ metadata?
-•	Exchangeable Image File Format (Exif).
-4. Tại sao chuyên gia kiểm tra thâm nhập chọn thực hiện quét thụ động thay vì quét chủ động?
-•	Để thu thập thông tin mà không bị phát hiện.
-5. Khi sử dụng lệnh nmap -sU, loại máy chủ nào được liệt kê?
-•	DNS, SNMP, hoặc DHCP server.
-Giải thích: Quét UDP phát hiện các máy chủ sử dụng giao thức UDP như DNS, SNMP, hoặc DHCP.
-________________________________________
-6. Nhược điểm của quét không xác thực (unauthenticated scan) là gì?
-•	Không phát hiện được lỗ hổng của các dịch vụ chạy bên trong mục tiêu.
-Giải thích: Quét không xác thực có thể bỏ sót lỗ hổng nếu dịch vụ không lắng nghe trên phân đoạn mạng hoặc bị firewall chặn.
-________________________________________
-7. Điều gì cần thiết để thực hiện quét xác thực toàn diện đối với một máy chủ Linux?
-•	Thông tin đăng nhập người dùng với quyền truy cập root-level.
-Giải thích: Quét xác thực yêu cầu quyền root để thực hiện các lệnh và thu thập thông tin đầy đủ nhất.
-________________________________________
-8. Trong trường hợp nào thì thực hiện quét không xác thực?
-•	Khi thông tin đăng nhập người dùng không được cung cấp.
-Giải thích: Quét không xác thực được sử dụng khi không có thông tin đăng nhập hoặc quyền root cho mục tiêu.
-________________________________________
-9. Tại sao chuyên gia sử dụng lệnh nmap -sF để quét TCP FIN?
-•	Khi quét TCP SYN bị phát hiện bởi firewall hoặc bộ lọc mạng.
-Giải thích: Quét TCP FIN gửi các gói FIN, thường được firewall hoặc bộ lọc mạng cho phép qua.
-________________________________________
-10. Mục đích của việc liệt kê máy chủ (host enumeration) khi bắt đầu kiểm tra thâm nhập là gì?
-•	Xác định tất cả các địa chỉ IP đang hoạt động trong phạm vi kiểm tra.
-Giải thích: Liệt kê máy chủ giúp xác định các địa chỉ IP đang hoạt động và cung cấp thông tin cơ bản về thiết bị.
-________________________________________
-11. Khi sử dụng lệnh nmap -sF để quét TCP FIN và không có phản hồi từ cổng mục tiêu, điều gì có thể được suy ra?
-•	Cổng đang mở.
-Giải thích: Nếu không nhận được phản hồi từ cổng, điều này cho thấy cổng đang mở vì hành vi mặc định là bỏ qua gói FIN.
-________________________________________
-12. Nhược điểm của quét TCP Connect so với quét TCP SYN trong kiểm tra thâm nhập là gì?
-•	Các gói bổ sung có thể kích hoạt báo động IDS.
-Giải thích: Quét TCP Connect thiết lập kết nối hoàn chỉnh, dễ bị phát hiện bởi các hệ thống IDS.
-________________________________________
-13. Khi kiểm tra thâm nhập xác định một lỗ hổng, bước tiếp theo để xác minh lỗ hổng là gì?
-•	Xác định xem lỗ hổng có thể bị khai thác hay không.
-Giải thích: Việc xác minh lỗ hổng bao gồm kiểm tra xem nó có thể bị khai thác để đảm bảo tính hợp lệ trước khi đánh giá rủi ro hoặc khắc phục.
-14. Tại sao tài nguyên Common Vulnerabilities and Exposures (CVE) lại hữu ích khi điều tra các lỗ hổng được phát hiện trong kiểm tra thâm nhập?
-•	CVE là một sự hợp nhất quốc tế các công cụ và cơ sở dữ liệu an ninh mạng.
-Giải thích: CVE được tạo ra năm 1999 để hợp nhất các công cụ và cơ sở dữ liệu an ninh mạng quốc tế.
-________________________________________
-15. Mục đích của việc áp dụng Hệ thống chấm điểm lỗ hổng chung (CVSS) cho một lỗ hổng được phát hiện là gì?
-•	Tính toán mức độ nghiêm trọng của lỗ hổng.
-Giải thích: CVSS là tiêu chuẩn được sử dụng rộng rãi để tính toán mức độ nghiêm trọng của lỗ hổng thông qua ba thành phần: điểm cơ bản, tạm thời, và môi trường.
-________________________________________
-16. Tại sao tác nhân đe dọa lại xem xét các tin tuyển dụng công việc IT và kỹ thuật của tổ chức mục tiêu?
-•	Để thu thập thông tin về phần cứng và phần mềm đang sử dụng.
-Giải thích: Các tin tuyển dụng thường liệt kê kỹ năng và yêu cầu về phần cứng/phần mềm, cung cấp cho kẻ tấn công thông tin hữu ích để lập kế hoạch tấn công.
-________________________________________
-17. Thu thập thông tin tình báo nguồn mở (OSINT) thường được thực hiện như thế nào trong kiểm tra thâm nhập?
-•	Sử dụng các tìm kiếm công khai trên Internet.
-Giải thích: OSINT thu thập thông tin từ các nguồn công khai như tìm kiếm trên Internet để phân tích mục tiêu.
-________________________________________
-18. Thông tin ban đầu nào có thể thu được khi thực hiện liệt kê người dùng trong kiểm tra thâm nhập?
-•	Danh sách hợp lệ các người dùng.
-Giải thích: Liệt kê người dùng cung cấp danh sách hợp lệ các tài khoản, là bước đầu tiên để cố gắng bẻ khóa thông tin xác thực.
-________________________________________
-19. Thông tin nào có thể thu được từ quét chia sẻ mạng trong kiểm tra thâm nhập?
-•	Các hệ thống chia sẻ tệp, thư mục, và máy in trên mạng.
-Giải thích: Quét chia sẻ mạng xác định các hệ thống đang chia sẻ tài nguyên, giúp xây dựng bề mặt tấn công của mạng nội bộ.
-________________________________________
-20. Lợi ích của quét xác thực so với quét không xác thực là gì?
-•	Quét xác thực cung cấp hình ảnh chi tiết hơn về bề mặt tấn công của mục tiêu.
-Giải thích: Quét xác thực yêu cầu thông tin đăng nhập với quyền root, cung cấp thông tin chi tiết và đầy đủ hơn về mục tiêu.
-________________________________________
-21. Ba yếu tố cần xem xét khi lập kế hoạch quét lỗ hổng trên mạng sản xuất là gì?
-•	Thời gian thực hiện quét.
-•	Băng thông mạng có sẵn.
-•	Cấu trúc mạng (Network topology).
-Giải thích: Các yếu tố này giúp giảm thiểu gián đoạn cho mạng mục tiêu trong quá trình quét.
-________________________________________
-22. Làm thế nào để giảm thiểu tác động đến các thiết bị trung gian khi quét lỗ hổng?
-•	Thực hiện quét càng gần mục tiêu càng tốt.
-Giải thích: Điều này đảm bảo các thiết bị trung gian không ảnh hưởng đến kết quả quét.
-________________________________________
-23. Tính năng quan trọng nhất của báo cáo cuối cùng sau kiểm tra thâm nhập là gì?
-•	Báo cáo đưa ra mô tả chính xác về các lỗ hổng.
-Giải thích: Báo cáo phải chính xác, xác minh các lỗ hổng và không chứa kết quả dương tính giả.
-________________________________________
-24. Lợi thế của việc sử dụng mạng Wi-Fi mục tiêu để kiểm tra gói tin là gì?
-•	Không yêu cầu truy cập vật lý vào tòa nhà.
-Giải thích: Dấu chân không dây của mạng có thể vượt ra ngoài tường tòa nhà, giúp giảm nguy cơ bị phát hiện.
-________________________________________
-25. Hướng dẫn của NIST Cybersecurity Framework giúp cải thiện an ninh mạng của tổ chức như thế nào?
-•	Khung làm việc cung cấp các tiêu chuẩn và thực hành tốt nhất trong ngành.
-Giải thích: NIST Cybersecurity Framework đưa ra các tiêu chuẩn và thực hành tốt nhất để cải thiện an ninh mạng của tổ chức.
+# Chương 1
 
-### Penetration Testing
+1. Phát biểu nào mô tả đúng nhất về khái niệm ethical hacker? => Người mô phỏng một kẻ tấn công để đánh giá tình trạng bảo mật của mạng.
+2. Thuật ngữ nào mô tả nhóm tội phạm mạng có tài trợ tốt và động cơ mạnh mẽ, sử dụng các kỹ thuật tấn công mới nhất để đạt được lợi nhuận tài chính? => Tội phạm có tổ chức
+3. Loại tác nhân đe dọa nào sử dụng tội phạm mạng để đánh cắp dữ liệu nhạy cảm và công khai nhằm làm xấu mặt mục tiêu? => Hacktivist
+4. Tấn công được nhà nước bảo trợ là gì? => Tấn công do chính phủ thực hiện để làm gián đoạn hoặc đánh cắp thông tin từ quốc gia khác.
+5. Tấn công nội bộ là gì? => Tấn công bởi nhân viên bất mãn trong tổ chức.
+6. Kiểm tra thâm nhập ứng dụng nhằm đánh giá loại lỗ hổng bảo mật nào? => Lỗi logic (logic flaws)
+7. Hai tài nguyên nào được kiểm tra trong kiểm tra thâm nhập cơ sở hạ tầng mạng? => Máy chủ AAA (AAA servers), Hệ thống ngăn chặn xâm nhập (IPSs)
+8. Khi kiểm tra ứng dụng web, cần kiểm tra truy cập vào tài nguyên nào? => Cơ sở dữ liệu phụ trợ (Back-end databases)
+9. Mục đích của chương trình bug bounty là gì? => Thưởng cho các chuyên gia an ninh khi phát hiện lỗ hổng bảo mật.
+10. Bài kiểm tra thâm nhập môi trường bán biết được đặc trưng bởi điều gì? => Là một cách tiếp cận lai giữa kiểm tra không biết và biết trước.
+11. Bài kiểm tra thâm nhập môi trường đã biết (Known Environment Test) có đặc điểm gì? => Người kiểm tra được cung cấp sơ đồ mạng, địa chỉ IP, cấu hình và thông tin đăng nhập người dùng.
+12. Loại kiểm tra thâm nhập nào chỉ cung cấp thông tin hạn chế, như tên miền và địa chỉ IP nằm trong phạm vi? => Kiểm tra môi trường chưa biết (Unknown Environment Test).
+13. Khớp các phương pháp kiểm tra thâm nhập với mô tả tương ứng:
+MITRE ATT&CK: Bộ tập hợp các ma trận chiến thuật và kỹ thuật mà kẻ tấn công sử dụng khi chuẩn bị tấn công.
+OWASP WSTG: Hướng dẫn chi tiết về kiểm tra bảo mật ứng dụng web.
+NIST SP 800-115: Cung cấp hướng dẫn lập kế hoạch và thực hiện kiểm tra bảo mật thông tin.
+OSSTMM: Đưa ra các phương pháp kiểm tra bảo mật nhất quán và có thể lặp lại.
+PTES: Cung cấp thông tin về các kiểu tấn công và phương pháp thực hiện.
+14. Ba giai đoạn trong Chuẩn thực thi kiểm tra thâm nhập (PTES) là gì? (Chọn ba)
+Mô hình hóa mối đe dọa (Threat Modeling)
+Khai thác (Exploitation)
+Báo cáo (Reporting)
+15. Hai giai đoạn nào thuộc Khung đánh giá bảo mật hệ thống thông tin (ISSAF)? (Chọn hai)
+Tương tác trước dự án (Pre-engagement interactions)
+Xác định lỗ hổng (Vulnerability identification)
+16. Hai giai đoạn nào thuộc Hướng dẫn kiểm tra bảo mật nguồn mở (OSSTMM)? (Chọn hai)
+Phân tích lỗ hổng (Vulnerability Analysis)
+Phân tích niềm tin (Trust Analysis)
+Giải thích: OSSTMM gồm các phần: Phân tích niềm tin, Lưu đồ công việc, Kiểm tra bảo mật vật lý, Kiểm tra bảo mật mạng dữ liệu, và Báo cáo với Báo cáo kiểm tra bảo mật (STAR).
+17. Phương pháp kiểm tra thâm nhập nào là hướng dẫn toàn diện tập trung vào kiểm tra ứng dụng web? => OWASP WSTG.
+18. Hệ điều hành Linux nào bao gồm các công cụ và tài nguyên kiểm tra thâm nhập? => BlackArch.
+19. Địa chỉ URL Linux nào cung cấp môi trường học tập thuận tiện về các công cụ và phương pháp kiểm tra bảo mật? => parrotsec.org.
+20. Yêu cầu "Giám sát sức khỏe (Health Monitoring)" có ý nghĩa gì khi thiết lập môi trường kiểm tra thâm nhập? => Người kiểm tra cần xác định nguyên nhân khi có sự cố xảy ra.
+21. Công cụ nào hữu ích khi thực hiện kiểm tra thâm nhập cơ sở hạ tầng mạng? => Công cụ vượt qua firewall và hệ thống ngăn chặn xâm nhập (IPS).
+22. Công cụ nào nên được sử dụng để thực hiện kiểm tra thâm nhập dựa trên ứng dụng? => Công cụ proxy đánh chặn.
+23. Công cụ nào nên được sử dụng để kiểm tra thâm nhập hạ tầng không dây? => Công cụ vô hiệu hóa thiết bị mạng.
+24. Công cụ nào nên được sử dụng để kiểm tra các nền tảng máy chủ và khách hàng trong môi trường? => Công cụ quét lỗ hổng.
+25. Nếu một hệ thống không thể được ảo hóa để kiểm tra thâm nhập đúng cách, hành động nào nên được thực hiện? => Sao lưu toàn bộ hệ thống.
+
+# Chương 2
+
+1. Một nhà thầu được thuê để thực hiện đánh giá lỗ hổng an ninh mạng tại một cơ sở khám chữa bệnh địa phương. Quy định của chính phủ Mỹ nào nhà thầu phải hiểu trước khi bắt đầu? => HIPAA
+2. Văn phòng IRS tại New York đang cân nhắc chuyển một số dịch vụ lên nền tảng điện toán đám mây. Quy định nào của chính phủ Mỹ họ cần tuân theo? => FedRAMP
+3. Một đại học ở California dự định cung cấp các khóa học trực tuyến cho các sinh viên ở Pháp và Đức. Quy định nào cần tuân thủ? => GDPR
+4. Cơ quan nào chịu trách nhiệm thực thi Quy tắc Bảo mật Thông tin Tài chính của Đạo luật GLB? => Ủy ban Thương mại Liên bang (FTC)
+5. Trong lĩnh vực y tế, thuật ngữ nào mô tả một đơn vị xử lý thông tin y tế không tiêu chuẩn thành định dạng tiêu chuẩn? => Healthcare Clearinghouse
+6. Thuật ngữ nào dùng để chỉ một đơn vị cung cấp thanh toán cho các dịch vụ y tế? => Health Plan
+7. Trong thương mại điện tử, yếu tố nào quyết định việc áp dụng các yêu cầu PCI DSS? => Số tài khoản chính (Primary Account Number - PAN)
+8. Hai ví dụ về dữ liệu xác thực nhạy cảm liên quan đến thẻ thanh toán cần tuân thủ PCI DSS là gì? => Dữ liệu đầy đủ từ dải từ hoặc dữ liệu tương đương trên chip, Mã CAV2/CVC2/CVV2/CID.
+9. Ghép các phần trong NIST SP 800-57 với mô tả tương ứng:
+Phần 1: Hướng dẫn chung: Cung cấp hướng dẫn và thực hành tốt nhất về quản lý khóa mã hóa.
+Phần 2: Thực hành tốt nhất cho tổ chức quản lý khóa: Cung cấp hướng dẫn về chính sách và yêu cầu lập kế hoạch bảo mật.
+Phần 3: Hướng dẫn quản lý khóa theo ứng dụng: Cung cấp hướng dẫn sử dụng các tính năng mã hóa trong hệ thống hiện tại.
+10. Nhân viên được giao nhiệm vụ đánh giá hệ thống của các tổ chức tài chính tại châu Âu cần có gì trước khi thực hiện? => Tài liệu cho phép thực hiện kiểm tra từ các tổ chức khách hàng.
+11. Công ty thuê chuyên gia an ninh mạng để kiểm tra thâm nhập. Tài liệu pháp lý nào quy định kỳ vọng, hạn chế, thời gian và chi phí? => Service-Level Agreement (SLA).
+12. Tài liệu nào mô tả các công việc cụ thể cần thực hiện trong kiểm tra thâm nhập? => Statement of Work (SOW).
+13. Công ty muốn đảm bảo rằng nhà tư vấn không tiết lộ thông tin cho bên thứ ba. Loại thỏa thuận NDA nào nên áp dụng? => Unilateral NDA.
+Giải thích: Đây là thỏa thuận trong đó một bên cung cấp thông tin và bên kia cam kết không tiết lộ.
+14. Công ty thuê chuyên gia an ninh mạng thực hiện kiểm tra thâm nhập để đánh giá tuân thủ quy định của chính phủ. Tài liệu nào phải được cung cấp cho chuyên gia để chỉ định thỏa thuận giữa hai bên? => Hợp đồng (Contract).
+15. Khi chuẩn bị báo cáo cuối cùng, phần nào của báo cáo nên nêu rõ các giới hạn của công việc đã thực hiện? => Phần từ chối trách nhiệm (Disclaimers).
+16. Ba ví dụ về các yếu tố thông thường trong tài liệu Quy tắc Tham gia (Rules of Engagement) là gì?
+Thời gian kiểm tra (Testing Timeline).
+Vị trí kiểm tra (Location of Testing).
+Phương pháp liên lạc ưa thích (Preferred Method of Communication).
+17. Yếu tố nào trong tài liệu Quy tắc Tham gia quy định các bài kiểm tra được phép hoặc không được phép? => Loại kiểm tra được phép hoặc không được phép (Types of Allowed or Disallowed Tests).
+18. Tài liệu nào cung cấp thông tin về ngôn ngữ XML dùng để mô tả chức năng của dịch vụ web? => Web Services Description Language (WSDL) Document.
+19. Tài liệu nào cung cấp thông tin về ngôn ngữ truy vấn cho APIs và thực thi truy vấn ở thời gian thực? => GraphQL Documentation.
+20. Tài liệu nào giúp nhà tư vấn định nghĩa và tài liệu hóa các hệ thống trong phạm vi kiểm tra? => Sơ đồ kiến trúc hệ thống và mạng (System and Network Architectural Diagram).
+21. Nguyên nhân nào dẫn đến sự mở rộng không kiểm soát của phạm vi công việc (Scope Creep)? => Nhận diện không hiệu quả các yếu tố kỹ thuật và phi kỹ thuật cần thiết.
+22. Bước đầu tiên của nhà tư vấn trong việc xác nhận phạm vi công việc là gì? => Hỏi người liên hệ của công ty và xem xét hợp đồng.
+23. Hai giao thức nào nên được xem xét để trao đổi email an toàn? => PGP (Pretty Good Privacy), S/MIME (Secure/Multipurpose Internet Mail Extensions).
+24. Thuật ngữ kiểm tra môi trường chưa biết (Unknown Environment Testing) được mô tả như thế nào? => Nhà tư vấn được cung cấp rất ít thông tin về hệ thống và mạng mục tiêu.
+25. Sự khác biệt chính giữa kiểm tra môi trường chưa biết và môi trường đã biết là gì? => Lượng thông tin được cung cấp cho nhà tư vấn.
+
+# Chương 3
+
+1. Hai công cụ nào có thể được sử dụng để thu thập thông tin DNS một cách thụ động? => Recon-ng, Dig
+2. Lệnh Linux nào có thể được sử dụng để xác định thông tin kỹ thuật và quản trị của một tên miền trong khi thực hiện thu thập thông tin thụ động? => whois
+3. Định dạng nào xác định cách hình ảnh và tệp âm thanh lưu trữ metadata? => Exchangeable Image File Format (Exif).
+4. Tại sao chuyên gia kiểm tra thâm nhập chọn thực hiện quét thụ động thay vì quét chủ động? => Để thu thập thông tin mà không bị phát hiện.
+5. Khi sử dụng lệnh nmap -sU, loại máy chủ nào được liệt kê? => DNS, SNMP, hoặc DHCP server.
+6. Nhược điểm của quét không xác thực (unauthenticated scan) là gì? => Không phát hiện được lỗ hổng của các dịch vụ chạy bên trong mục tiêu.
+7. Điều gì cần thiết để thực hiện quét xác thực toàn diện đối với một máy chủ Linux? => Thông tin đăng nhập người dùng với quyền truy cập root-level.
+8. Trong trường hợp nào thì thực hiện quét không xác thực? => Khi thông tin đăng nhập người dùng không được cung cấp.
+9. Tại sao chuyên gia sử dụng lệnh nmap -sF để quét TCP FIN? => Khi quét TCP SYN bị phát hiện bởi firewall hoặc bộ lọc mạng.
+10. Mục đích của việc liệt kê máy chủ (host enumeration) khi bắt đầu kiểm tra thâm nhập là gì? => Xác định tất cả các địa chỉ IP đang hoạt động trong phạm vi kiểm tra.
+11. Khi sử dụng lệnh nmap -sF để quét TCP FIN và không có phản hồi từ cổng mục tiêu, điều gì có thể được suy ra? => Cổng đang mở.
+Giải thích: Nếu không nhận được phản hồi từ cổng, điều này cho thấy cổng đang mở vì hành vi mặc định là bỏ qua gói FIN.
+12. Nhược điểm của quét TCP Connect so với quét TCP SYN trong kiểm tra thâm nhập là gì? => Các gói bổ sung có thể kích hoạt báo động IDS.
+13. Khi kiểm tra thâm nhập xác định một lỗ hổng, bước tiếp theo để xác minh lỗ hổng là gì? => Xác định xem lỗ hổng có thể bị khai thác hay không.
+14. Tại sao tài nguyên Common Vulnerabilities and Exposures (CVE) lại hữu ích khi điều tra các lỗ hổng được phát hiện trong kiểm tra thâm nhập? => CVE là một sự hợp nhất quốc tế các công cụ và cơ sở dữ liệu an ninh mạng.
+15. Mục đích của việc áp dụng Hệ thống chấm điểm lỗ hổng chung (CVSS) cho một lỗ hổng được phát hiện là gì? => Tính toán mức độ nghiêm trọng của lỗ hổng.
+16. Tại sao tác nhân đe dọa lại xem xét các tin tuyển dụng công việc IT và kỹ thuật của tổ chức mục tiêu? => Để thu thập thông tin về phần cứng và phần mềm đang sử dụng.
+17. Thu thập thông tin tình báo nguồn mở (OSINT) thường được thực hiện như thế nào trong kiểm tra thâm nhập? => Sử dụng các tìm kiếm công khai trên Internet.
+18. Thông tin ban đầu nào có thể thu được khi thực hiện liệt kê người dùng trong kiểm tra thâm nhập? => Danh sách hợp lệ các người dùng.
+19. Thông tin nào có thể thu được từ quét chia sẻ mạng trong kiểm tra thâm nhập? => Các hệ thống chia sẻ tệp, thư mục, và máy in trên mạng.
+20. Lợi ích của quét xác thực so với quét không xác thực là gì? => Quét xác thực cung cấp hình ảnh chi tiết hơn về bề mặt tấn công của mục tiêu.
+21. Ba yếu tố cần xem xét khi lập kế hoạch quét lỗ hổng trên mạng sản xuất là gì?
+Thời gian thực hiện quét.
+Băng thông mạng có sẵn.
+Cấu trúc mạng (Network topology).
+22. Làm thế nào để giảm thiểu tác động đến các thiết bị trung gian khi quét lỗ hổng? => Thực hiện quét càng gần mục tiêu càng tốt.
+23. Tính năng quan trọng nhất của báo cáo cuối cùng sau kiểm tra thâm nhập là gì? => Báo cáo đưa ra mô tả chính xác về các lỗ hổng.
+24. Lợi thế của việc sử dụng mạng Wi-Fi mục tiêu để kiểm tra gói tin là gì? => Không yêu cầu truy cập vật lý vào tòa nhà.
+25. Hướng dẫn của NIST Cybersecurity Framework giúp cải thiện an ninh mạng của tổ chức như thế nào? => Khung làm việc cung cấp các tiêu chuẩn và thực hành tốt nhất trong ngành.
+
+### Chương 4
+
 1. Loại mối đe dọa nào cho phép kẻ tấn công lấy thông tin xác thực của khách hàng ngân hàng bằng cách giả mạo trang đăng nhập của tổ chức tài chính? => Malvertising.
 2. Tấn công watering hole là gì? => Tấn công khai thác một trang web mà các thành viên của tổ chức mục tiêu thường truy cập.
 3. Hành động lấy thông tin từ nạn nhân mà không trực tiếp yêu cầu thông tin đó được gọi là gì? => Elicitation (Gợi mở).
@@ -302,305 +118,120 @@ Giải thích: NIST Cybersecurity Framework đưa ra các tiêu chuẩn và th�
 8. Khi một người nổi tiếng quảng bá sản phẩm trên mạng xã hội, phương pháp tác động xã hội nào được sử dụng? => Social Proof (Bằng chứng xã hội).
 9. Apple sử dụng phương pháp tác động xã hội nào khi xây dựng hình ảnh thân thiện với môi trường? => Likeness (Sự yêu thích).
 10. Kẻ tấn công gửi email phishing yêu cầu nạn nhân thay đổi mật khẩu ngân hàng ngay lập tức. Phương pháp tác động xã hội nào được sử dụng? => Urgency (Sự cấp bách).
-11. Phát biểu nào về tấn công vật lý kỹ thuật xã hội là đúng?
-•	Trong tấn công piggybacking, người không được phép đi theo người được phép vào khu vực hạn chế, thường có sự đồng ý của họ.
-Giải thích: Piggybacking thường xảy ra khi người không được phép được phép vào khu vực hạn chế, trong khi tailgating xảy ra mà không có sự đồng ý.
-________________________________________
-12. Công cụ nào cung cấp giao diện web để thao túng người dùng là nạn nhân của tấn công XSS?
-•	BeEF.
-Giải thích: BeEF (Browser Exploitation Framework) sử dụng các lỗ hổng XSS để thao túng người dùng thông qua một giao diện web console.
-________________________________________
-13. Công cụ Apple iOS và Android nào có thể giả mạo số điện thoại?
-•	SpoofApp.
-Giải thích: SpoofApp là ứng dụng trên Apple iOS và Android cho phép giả mạo số điện thoại.
-________________________________________
-14. Hai loại tấn công vật lý nào có thể được giảm thiểu bằng cách sử dụng cửa ra vào kiểm soát truy cập (access control vestibules)?
-•	Tailgating.
-•	Piggybacking.
-Giải thích: Cửa ra vào kiểm soát truy cập, hay còn gọi là "mantrap", ngăn chặn hành động đi theo người khác (tailgating và piggybacking).
-________________________________________
-15. Hai tùy chọn kiểm soát truy cập nào thường được sử dụng kết hợp với cửa kiểm soát truy cập?
-•	Thẻ gần (Proximity card) và mã PIN.
-•	Quét sinh trắc học (Biometric scan).
-Giải thích: Xác thực đa yếu tố thường được sử dụng, ví dụ, quét thẻ và PIN ở cửa đầu tiên, quét sinh trắc học ở cửa thứ hai.
-________________________________________
-16. Nguồn lực nào có thể giảm thiểu tấn công piggybacking và tailgating?
-•	Bảo vệ an ninh (Security guard).
-Giải thích: Bảo vệ an ninh, cửa quay (turnstile), và cửa ra vào kép (double entry doors) có thể ngăn chặn tấn công piggybacking và tailgating.
-________________________________________
-17. Công cụ nào có thể thực hiện các cuộc tấn công kỹ thuật xã hội và tích hợp với các công cụ như Metasploit?
-•	SET (Social-Engineer Toolkit).
-Giải thích: SET được tích hợp sẵn trong Kali Linux và Parrot Security để thực hiện nhiều tấn công kỹ thuật xã hội.
-________________________________________
-18. Ai là mục tiêu của tấn công whaling?
-•	Các nhà quản lý cấp cao như CEO hoặc cá nhân quan trọng trong tổ chức.
-Giải thích: Tấn công whaling nhắm vào các giám đốc điều hành cấp cao để lấy thông tin nhạy cảm hoặc xâm nhập hệ thống.
-________________________________________
-19. Mục đích của tấn công vishing là gì?
-•	Thuyết phục nạn nhân qua điện thoại tiết lộ thông tin cá nhân hoặc tài chính.
-Giải thích: Vishing là tấn công kỹ thuật xã hội qua điện thoại để lấy thông tin như số thẻ tín dụng hoặc số an sinh xã hội.
-________________________________________
-20. Công cụ nào trên iOS và Android có thể giả mạo số điện thoại, ghi âm cuộc gọi, và tạo tiếng ồn nền?
-•	SpoofCard.
-Giải thích: SpoofCard có thể giả mạo số, thay đổi giọng nói, ghi âm cuộc gọi và tạo âm thanh nền khác nhau.
-________________________________________
-21. Kẻ tấn công gửi tin nhắn SMS yêu cầu nạn nhân nhấp vào liên kết để nhận Bitcoin và nhập thông tin tài khoản ngân hàng. Đây là kiểu tấn công nào?
-•	SMS phishing.
-Giải thích: SMS phishing (smishing) là tấn công kỹ thuật xã hội qua tin nhắn để lừa nạn nhân cung cấp thông tin nhạy cảm.
-________________________________________
-22. Công cụ nào cho phép thực hiện các hoạt động hậu khai thác như Windows reverse VNC DLL hoặc reverse TCP shell?
-•	SET (Social-Engineer Toolkit).
-Giải thích: SET hỗ trợ các hoạt động hậu khai thác như tạo Meterpreter shell, reverse TCP shell, và Windows reverse VNC DLL.
-________________________________________
-23. Công cụ nào có thể gửi thông báo giả đến trình duyệt của nạn nhân?
-•	BeEF (Browser Exploitation Framework).
-Giải thích: BeEF lợi dụng các lỗ hổng XSS để gửi thông báo giả hoặc thực hiện nhiều tấn công khác.
-________________________________________
-24. Một nhân viên mới đăng hình ảnh thẻ nhân viên của mình lên mạng xã hội. Loại tấn công vật lý nào có thể xảy ra?
-•	Badge cloning (Nhân bản thẻ).
-Giải thích: Kẻ tấn công có thể tận dụng hình ảnh thẻ trên mạng xã hội để nhân bản thiết kế thẻ và xâm nhập tổ chức.
-________________________________________
-25. Một người dùng nhặt được USB trong bãi đỗ xe công ty. Họ nên làm gì với USB này?
-•	Giao USB cho bộ phận bảo mật của công ty.
-Giải thích: Kẻ tấn công có thể sử dụng USB bị bỏ lại như một bẫy chứa phần mềm độc hại. Cách xử lý an toàn nhất là giao USB cho bộ phận bảo mật.
+11. Phát biểu nào về tấn công vật lý kỹ thuật xã hội là đúng? => Trong tấn công piggybacking, người không được phép đi theo người được phép vào khu vực hạn chế, thường có sự đồng ý của họ.
+12. Công cụ nào cung cấp giao diện web để thao túng người dùng là nạn nhân của tấn công XSS? => BeEF.
+13. Công cụ Apple iOS và Android nào có thể giả mạo số điện thoại? => SpoofApp.
+14. Hai loại tấn công vật lý nào có thể được giảm thiểu bằng cách sử dụng cửa ra vào kiểm soát truy cập (access control vestibules)? => Tailgating, Piggybacking.
+15. Hai tùy chọn kiểm soát truy cập nào thường được sử dụng kết hợp với cửa kiểm soát truy cập? => Thẻ gần (Proximity card) và mã PIN, Quét sinh trắc học (Biometric scan).
+16. Nguồn lực nào có thể giảm thiểu tấn công piggybacking và tailgating? => Bảo vệ an ninh (Security guard).
+17. Công cụ nào có thể thực hiện các cuộc tấn công kỹ thuật xã hội và tích hợp với các công cụ như Metasploit? => SET (Social-Engineer Toolkit).
+18. Ai là mục tiêu của tấn công whaling? => Các nhà quản lý cấp cao như CEO hoặc cá nhân quan trọng trong tổ chức.
+19. Mục đích của tấn công vishing là gì? => Thuyết phục nạn nhân qua điện thoại tiết lộ thông tin cá nhân hoặc tài chính.
+20. Công cụ nào trên iOS và Android có thể giả mạo số điện thoại, ghi âm cuộc gọi, và tạo tiếng ồn nền? => SpoofCard.
+21. Kẻ tấn công gửi tin nhắn SMS yêu cầu nạn nhân nhấp vào liên kết để nhận Bitcoin và nhập thông tin tài khoản ngân hàng. Đây là kiểu tấn công nào? => SMS phishing.
+22. Công cụ nào cho phép thực hiện các hoạt động hậu khai thác như Windows reverse VNC DLL hoặc reverse TCP shell? => SET (Social-Engineer Toolkit).
+23. Công cụ nào có thể gửi thông báo giả đến trình duyệt của nạn nhân? => BeEF (Browser Exploitation Framework).
+24. Một nhân viên mới đăng hình ảnh thẻ nhân viên của mình lên mạng xã hội. Loại tấn công vật lý nào có thể xảy ra? => Badge cloning (Nhân bản thẻ).
+25. Một người dùng nhặt được USB trong bãi đỗ xe công ty. Họ nên làm gì với USB này? => Giao USB cho bộ phận bảo mật của công ty.
+    
 Chương 5 Quiz – Giới thiệu về Ethical Hacking và Penetration Testing
-1. Dịch vụ NetBIOS nào được sử dụng cho giao tiếp có kết nối?
-•	NetBIOS-SSN.
-Giải thích:
-•	NetBIOS-NS: Dịch vụ tên NetBIOS, dùng để đăng ký và phân giải tên.
-•	NetBIOS-DGM: Dịch vụ datagram, sử dụng giao tiếp không kết nối.
-•	NetBIOS-SSN: Dịch vụ phiên, sử dụng giao tiếp có kết nối.
-________________________________________
+
+1. Dịch vụ NetBIOS nào được sử dụng cho giao tiếp có kết nối? => NetBIOS-SSN.
 2. Ghép cổng với dịch vụ giao thức NetBIOS tương ứng:
-•	UDP port 138: NetBIOS Datagram Service.
-•	UDP port 137: NetBIOS Name Service.
-•	TCP port 445: Giao thức SMB.
-•	TCP port 139: NetBIOS Session Service.
-•	TCP port 135: Microsoft Remote Procedure Call (MS-RPC).
-________________________________________
+UDP port 138: NetBIOS Datagram Service.
+UDP port 137: NetBIOS Name Service.
+TCP port 445: Giao thức SMB.
+TCP port 139: NetBIOS Session Service.
+TCP port 135: Microsoft Remote Procedure Call (MS-RPC).
 3. Hai tính năng nào trên DNS servers sử dụng BIND 9.5.0 trở lên giúp giảm thiểu tấn công DNS cache poisoning?
-•	Ngẫu nhiên hóa cổng (randomization of ports).
-•	Cung cấp mã hóa bảo mật cho các ID giao dịch DNS (cryptographically secure DNS transaction identifiers).
-Giải thích: BIND 9.5.0 trở lên hỗ trợ ngăn chặn DNS cache poisoning bằng cách ngẫu nhiên hóa cổng và bảo mật ID giao dịch DNS.
-________________________________________
-4. Cổng UDP nào được sử dụng bởi giao thức SNMP?
-•	161.
-Giải thích: SNMP (Simple Network Management Protocol) sử dụng cổng UDP 161 để quản lý thiết bị mạng.
-________________________________________
-5. Đặc điểm của tấn công DNS poisoning là gì?
-•	Thao túng bộ nhớ đệm của bộ phân giải DNS (DNS resolver cache).
-Giải thích: Tấn công DNS cache poisoning thao túng bộ nhớ đệm để chuyển hướng nạn nhân đến hệ thống của kẻ tấn công bằng cách tiêm dữ liệu DNS bị hỏng.
-________________________________________
-6. Công cụ hoặc script nào của Kali Linux có thể thu thập thông tin về thiết bị cấu hình SNMP?
-•	snmp-check.
-Giải thích: snmp-check có thể thực hiện SNMP walk để thu thập thông tin về thiết bị.
-________________________________________
+Ngẫu nhiên hóa cổng (randomization of ports).
+Cung cấp mã hóa bảo mật cho các ID giao dịch DNS (cryptographically secure DNS transaction identifiers).
+4. Cổng UDP nào được sử dụng bởi giao thức SNMP? => 161.
+5. Đặc điểm của tấn công DNS poisoning là gì? => Thao túng bộ nhớ đệm của bộ phân giải DNS (DNS resolver cache).
+6. Công cụ hoặc script nào của Kali Linux có thể thu thập thông tin về thiết bị cấu hình SNMP? => snmp-check.
 7. Ghép lệnh SMTP với mô tả tương ứng:
-•	MAIL: Chỉ định địa chỉ email của người gửi.
-•	RSET: Hủy giao dịch email.
-•	EHELO: Khởi tạo giao tiếp với máy chủ SMTP mở rộng.
-•	DATA: Bắt đầu chuyển nội dung của email.
-•	STARTTLS: Bắt đầu kết nối bảo mật TLS với máy chủ email.
-•	HELO: Khởi tạo giao tiếp SMTP với máy chủ email.
-________________________________________
-8. Hai cách tốt nhất để giảm thiểu lạm dụng và tấn công máy chủ FTP là gì?
-•	Yêu cầu xác thực lại các phiên không hoạt động (re-authentication of inactive sessions).
-•	Sử dụng mã hóa dữ liệu khi lưu trữ (encryption at rest).
-Giải thích: Các biện pháp khác bao gồm: mật khẩu mạnh, xác thực đa yếu tố, và giữ phần mềm FTP luôn được cập nhật.
-________________________________________
-9. Đặc điểm của tấn công pass-the-hash là gì?
-•	Sử dụng giá trị băm (hash) mật khẩu đã thu thập để xác thực và truy cập các hệ thống khác.
-Giải thích: Hệ điều hành Windows chỉ lưu trữ băm mật khẩu thay vì mật khẩu thực tế, nên kẻ tấn công sử dụng băm đã thu thập để đăng nhập.
-________________________________________
-10. Tấn công Kerberoasting là gì?
-•	Hoạt động hậu khai thác nhằm trích xuất băm thông tin đăng nhập của tài khoản dịch vụ từ Active Directory để giải mã ngoại tuyến.
-Giải thích: Kerberoasting được sử dụng để trích xuất và giải mã băm thông tin đăng nhập từ Active Directory.
-________________________________________
+MAIL: Chỉ định địa chỉ email của người gửi.
+RSET: Hủy giao dịch email.
+EHELO: Khởi tạo giao tiếp với máy chủ SMTP mở rộng.
+DATA: Bắt đầu chuyển nội dung của email.
+STARTTLS: Bắt đầu kết nối bảo mật TLS với máy chủ email.
+HELO: Khởi tạo giao tiếp SMTP với máy chủ email.
+8. Hai cách tốt nhất để giảm thiểu lạm dụng và tấn công máy chủ FTP là gì? => Yêu cầu xác thực lại các phiên không hoạt động (re-authentication of inactive sessions), Sử dụng mã hóa dữ liệu khi lưu trữ (encryption at rest).
+9. Đặc điểm của tấn công pass-the-hash là gì? => Sử dụng giá trị băm (hash) mật khẩu đã thu thập để xác thực và truy cập các hệ thống khác.
+10. Tấn công Kerberoasting là gì? => Hoạt động hậu khai thác nhằm trích xuất băm thông tin đăng nhập của tài khoản dịch vụ từ Active Directory để giải mã ngoại tuyến.
 11. Ghép loại tấn công với mô tả tương ứng:
-•	Reflected DOS: Tấn công dùng gói tin giả mạo từ nạn nhân, buộc nguồn gửi phản hồi về nạn nhân.
-•	DNS Amplification: Tấn công khai thác lỗ hổng để biến truy vấn nhỏ thành payload lớn nhằm làm tê liệt máy chủ.
-•	Direct DOS: Nguồn tấn công trực tiếp gửi gói tin đến nạn nhân.
-•	DDOS: Tấn công sử dụng botnet điều khiển từ hệ thống CnC.
-________________________________________
+Reflected DOS: Tấn công dùng gói tin giả mạo từ nạn nhân, buộc nguồn gửi phản hồi về nạn nhân.
+DNS Amplification: Tấn công khai thác lỗ hổng để biến truy vấn nhỏ thành payload lớn nhằm làm tê liệt máy chủ.
+Direct DOS: Nguồn tấn công trực tiếp gửi gói tin đến nạn nhân.
+DDOS: Tấn công sử dụng botnet điều khiển từ hệ thống CnC.
 12. Ghép loại tấn công với mô tả tương ứng:
-•	Route Manipulation: Tấn công BGP bằng cách cấu hình hoặc chiếm quyền điều khiển router biên.
-•	Downgrade: Buộc hệ thống sử dụng giao thức mã hóa yếu hoặc thuật toán dễ bị tấn công.
-•	DHCP Starvation: Gửi nhiều gói DISCOVER giả mạo làm cạn kiệt địa chỉ IP.
-•	VLAN Hopping: Bỏ qua giới hạn lớp 2 để truy cập trái phép.
-•	MAC Spoofing: Giả mạo địa chỉ vật lý để truy cập trái phép hoặc tấn công man-in-the-middle.
-13. Công cụ nào có thể thực hiện tấn công Disassociation?
-•	Airmon-ng.
-Giải thích: Airmon-ng là một phần của bộ Aircrack-ng, được sử dụng để thực hiện tấn công Disassociation và do thám không dây.
-________________________________________
-14. Đặc điểm của tấn công Bluesnarfing là gì?
-•	Tấn công được thực hiện qua Bluetooth với các thiết bị dễ bị tấn công trong phạm vi và lấy cắp thông tin từ thiết bị của nạn nhân.
-Giải thích: Bluesnarfing lấy thông tin từ thiết bị nạn nhân qua Bluetooth, bao gồm cả mã số IMEI của thiết bị.
-________________________________________
-15. Giao thức Wi-Fi nào dễ bị tấn công brute-force nhất khi triển khai mạng không dây?
-•	WPS (Wi-Fi Protected Setup).
-Giải thích: WPS đơn giản hóa việc triển khai mạng nhưng thường dễ bị tấn công brute-force do không giới hạn số lần thử mã PIN.
-________________________________________
-16. Tính năng MFP trong tiêu chuẩn 802.11w giúp bảo vệ chống lại tấn công không dây nào?
-•	Tấn công deauthentication.
-Giải thích: MFP (Management Frame Protection) bảo vệ chống lại các khung quản lý giả mạo, bao gồm tấn công deauthentication.
-________________________________________
-17. DNS resolver cache trên hệ thống Windows là gì?
-•	Một cơ sở dữ liệu tạm thời lưu trữ các bản ghi của các trang web đã truy cập gần đây và các lần cố gắng truy cập.
-Giải thích: DNS resolver cache chứa thông tin về các lần truy cập trang web gần đây để tăng tốc độ truy cập.
-________________________________________
+Route Manipulation: Tấn công BGP bằng cách cấu hình hoặc chiếm quyền điều khiển router biên.
+Downgrade: Buộc hệ thống sử dụng giao thức mã hóa yếu hoặc thuật toán dễ bị tấn công.
+DHCP Starvation: Gửi nhiều gói DISCOVER giả mạo làm cạn kiệt địa chỉ IP.
+VLAN Hopping: Bỏ qua giới hạn lớp 2 để truy cập trái phép.
+MAC Spoofing: Giả mạo địa chỉ vật lý để truy cập trái phép hoặc tấn công man-in-the-middle.
+13. Công cụ nào có thể thực hiện tấn công Disassociation? => Airmon-ng.
+14. Đặc điểm của tấn công Bluesnarfing là gì? => Tấn công được thực hiện qua Bluetooth với các thiết bị dễ bị tấn công trong phạm vi và lấy cắp thông tin từ thiết bị của nạn nhân.
+15. Giao thức Wi-Fi nào dễ bị tấn công brute-force nhất khi triển khai mạng không dây? => WPS (Wi-Fi Protected Setup).
+16. Tính năng MFP trong tiêu chuẩn 802.11w giúp bảo vệ chống lại tấn công không dây nào? => Tấn công deauthentication.
+17. DNS resolver cache trên hệ thống Windows là gì? => Một cơ sở dữ liệu tạm thời lưu trữ các bản ghi của các trang web đã truy cập gần đây và các lần cố gắng truy cập.
 18. Ghép số cổng TCP với giao thức email tương ứng:
-•	465: SMTP over SSL (SMTPS).
-•	587: Secure SMTP (SSMTP) với STARTTLS.
-•	143: IMAP không mã hóa.
-•	995: POP3 mã hóa.
-•	993: IMAP mã hóa.
-________________________________________
-19. Cổng TCP mặc định nào được sử dụng trong SMTP không mã hóa?
-•	25.
-Giải thích: TCP port 25 là cổng mặc định của SMTP không mã hóa.
-________________________________________
-20. Đặc điểm của tấn công Kerberos Silver Ticket là gì?
-•	Sử dụng vé dịch vụ giả mạo cho một dịch vụ cụ thể trên máy chủ.
-Giải thích: Tấn công Silver Ticket tạo vé giả cho một dịch vụ cụ thể trên máy chủ, bypassing Kerberos authentication.
-________________________________________
-21. Tấn công nào là hoạt động hậu khai thác nhằm trích xuất băm thông tin đăng nhập tài khoản dịch vụ từ Active Directory?
-•	Kerberoasting.
-Giải thích: Kerberoasting khai thác các băm thông tin đăng nhập tài khoản dịch vụ từ Active Directory để giải mã ngoại tuyến.
-________________________________________
-22. Bốn yếu tố nào cần thiết để tạo Silver Ticket trong tấn công Kerberos Silver Ticket?
-•	Hash value.
-•	System account.
-•	SID.
-•	FQDN (Fully Qualified Domain Name).
-Giải thích: Các yếu tố này được sử dụng để tạo vé Silver Ticket, ví dụ cho dịch vụ CIFS hoặc HOST.
-________________________________________
-23. Tấn công giả mạo IP là loại tấn công nào?
-•	On-path.
-Giải thích: Tấn công on-path chặn giao tiếp giữa hai hệ thống bằng cách sử dụng IP spoofing để đánh lừa nạn nhân kết nối với kẻ tấn công.
-________________________________________
-24. Thực hành giảm thiểu phổ biến nào cho tấn công ARP cache poisoning trên switch?
-•	DAI (Dynamic ARP Inspection).
-Giải thích: DAI trên switch giúp ngăn chặn giả mạo địa chỉ tầng 2 và bảo vệ chống lại ARP cache poisoning.
-________________________________________
-25. Kẻ tấn công thực hiện tấn công DDoS phản xạ (reflected DDoS) với lưu lượng phản hồi lớn hơn nhiều so với gói tin ban đầu. Đây là loại tấn công nào?
-•	Amplification (Khuếch đại).
-Giải thích: Tấn công khuếch đại là một dạng tấn công DoS phản xạ, nơi lưu lượng phản hồi lớn hơn nhiều so với gói tin ban đầu, gây ngập máy nạn nhân.
-Chương 6 Quiz – Giới thiệu về Ethical Hacking và Penetration Testing
-1. Hai chức năng nào được cung cấp bởi thiết bị proxy web?
-•	Caching các thông điệp HTTP.
-•	Cho phép truyền tải HTTP qua tường lửa.
-Giải thích: Proxy HTTP hoạt động như một máy chủ và máy khách. Proxy giúp chuyển tiếp các yêu cầu từ máy khách web đến các máy chủ web và hỗ trợ caching các thông điệp HTTP.
-________________________________________
+465: SMTP over SSL (SMTPS).
+587: Secure SMTP (SSMTP) với STARTTLS.
+143: IMAP không mã hóa.
+995: POP3 mã hóa.
+993: IMAP mã hóa.
+19. Cổng TCP mặc định nào được sử dụng trong SMTP không mã hóa? => 25.
+20. Đặc điểm của tấn công Kerberos Silver Ticket là gì? => Sử dụng vé dịch vụ giả mạo cho một dịch vụ cụ thể trên máy chủ.
+21. Tấn công nào là hoạt động hậu khai thác nhằm trích xuất băm thông tin đăng nhập tài khoản dịch vụ từ Active Directory? => Kerberoasting.
+22. Bốn yếu tố nào cần thiết để tạo Silver Ticket trong tấn công Kerberos Silver Ticket? => Hash value. ,System account. ,SID. , FQDN (Fully Qualified Domain Name).
+23. Tấn công giả mạo IP là loại tấn công nào? => On-path.
+24. Thực hành giảm thiểu phổ biến nào cho tấn công ARP cache poisoning trên switch? => DAI (Dynamic ARP Inspection).
+25. Kẻ tấn công thực hiện tấn công DDoS phản xạ (reflected DDoS) với lưu lượng phản hồi lớn hơn nhiều so với gói tin ban đầu. Đây là loại tấn công nào? => Amplification (Khuếch đại).
+
+# Chương 6
+
+1. Hai chức năng nào được cung cấp bởi thiết bị proxy web? => Caching các thông điệp HTTP, Cho phép truyền tải HTTP qua tường lửa.
 2. Ghép mã trạng thái HTTP trong phản hồi của máy chủ web với mô tả tương ứng.
-•	Mã trạng thái 200: Liên quan đến giao dịch thành công.
-•	Mã trạng thái 300: Liên quan đến việc chuyển hướng HTTP.
-•	Mã trạng thái 400: Liên quan đến lỗi của khách hàng.
-•	Mã trạng thái 500: Liên quan đến lỗi của máy chủ.
-•	Mã trạng thái 100: Thông tin.
-________________________________________
+Mã trạng thái 200: Liên quan đến giao dịch thành công.
+Mã trạng thái 300: Liên quan đến việc chuyển hướng HTTP.
+Mã trạng thái 400: Liên quan đến lỗi của khách hàng.
+Mã trạng thái 500: Liên quan đến lỗi của máy chủ.
+Mã trạng thái 100: Thông tin.
 3. Ghép các yếu tố trong URL ftp://xyz-company.com:2457/support/file;id=65?name=intro&r=true với mô tả tương ứng.
-•	xyz-company.com: Host.
-•	2457: Port.
-•	support/file: Path.
-•	ftp: Scheme.
-•	name=intro&r=true: Query-string.
-•	id=65: Path-segment-params.
-________________________________________
-4. Chức năng nào được HTTP 2.0 cung cấp để cải thiện hiệu suất so với HTTP 1.1?
-•	HTTP 2.0 cung cấp multiplexing thông điệp HTTP và yêu cầu ít thông điệp hơn để tải nội dung web.
-Giải thích: HTTP 1.1 tải tài nguyên từng cái một trong mỗi chu kỳ GET và RESPOND. HTTP 2.0 cho phép gửi nhiều thông điệp GET đồng thời, giúp cải thiện hiệu suất.
-________________________________________
-5. Tại sao các nhà phát triển ứng dụng nên thay đổi tên session ID được sử dụng bởi các framework phát triển ứng dụng web phổ biến?
-•	Các tên session ID này có thể được sử dụng để xác định framework ứng dụng đã được sử dụng.
-Giải thích: Các tên session ID mặc định như PHPSESSID (PHP), JSESSIONID (J2EE) dễ dàng nhận diện framework của ứng dụng. Việc thay đổi tên session ID giúp bảo mật hơn.
-________________________________________
-6. Một người dùng đang sử dụng trang web mua sắm trực tuyến để đặt mua laptop. Cơ chế nào được trang web sử dụng để duy trì xác thực người dùng một cách an toàn trong quá trình mua sắm?
-•	Session ID.
-Giải thích: Web ứng dụng sử dụng session ID để theo dõi người dùng và xác thực trong suốt quá trình sử dụng ứng dụng.
-________________________________________
-7. Cách tốt nhất để giảm thiểu tấn công session fixation là gì?
-•	Đảm bảo session ID được sử dụng chỉ sau khi người dùng hoàn thành xác thực.
-Giải thích: Đảm bảo rằng session ID được trao đổi qua kênh mã hóa giúp bảo vệ session khỏi các cuộc tấn công session fixation.
-________________________________________
-8. Hai thuộc tính nào có thể được thiết lập trong cookie của ứng dụng web để chỉ ra đó là cookie cố định (persistent cookie)?
-•	Expires.
-•	Max-Age.
-Giải thích: Nếu cookie có thuộc tính Expires hoặc Max-Age, nó sẽ được lưu trữ trên đĩa của trình duyệt và được coi là cookie cố định.
-________________________________________
-9. Tổ chức quốc tế nào chuyên giáo dục các chuyên gia trong ngành, tạo công cụ và thúc đẩy các phương pháp bảo mật tốt nhất cho các ứng dụng web và hệ thống cơ sở hạ tầng?
-•	Open Web Application Security Project (OWASP).
-Giải thích: OWASP là tổ chức quốc tế chuyên giáo dục, tạo công cụ và thúc đẩy các phương pháp bảo mật tốt nhất cho ứng dụng web.
-________________________________________
-10. Thành phần nào trong câu lệnh dưới đây có khả năng là thông tin đầu vào từ người dùng trong biểu mẫu web?
-•	a-type.
-Giải thích: Trong câu lệnh SQL, toán tử LIKE được sử dụng để tìm kiếm mẫu đã chỉ định trong một trường (cột). Cột a-type sẽ tìm kiếm bất kỳ chuỗi nào bắt đầu bằng "ping".
-________________________________________
-11. Mô tả nào dưới đây là một ví dụ của tấn công SQL injection theo kiểu out-of-band?
-•	Kẻ tấn công gửi yêu cầu SQL và nhận kết quả qua một kênh khác, ví dụ như qua email.
-Giải thích: Tấn công SQL injection kiểu out-of-band là khi kẻ tấn công thu thập kết quả truy vấn qua một kênh khác, chẳng hạn như email hoặc tin nhắn tức thời.
-________________________________________
-12. Một kẻ tấn công thực hiện tấn công SQL injection trên một trang web bằng cách gửi nhiều câu lệnh SQL cụ thể để tái tạo thông tin cần thiết. Đây là kiểu tấn công SQL injection nào?
-•	Blind SQL injection.
-Giải thích: Tấn công Blind SQL injection là khi kẻ tấn công không nhận được dữ liệu trả về mà thay vào đó phải suy luận thông qua các hành vi của ứng dụng hoặc cơ sở dữ liệu.
-13. Kẻ tấn công thực hiện tấn công SQL injection trên ứng dụng web bằng cách cố gắng buộc ứng dụng yêu cầu cơ sở dữ liệu backend thực hiện nhiều truy vấn SELECT. Kỹ thuật nào khai thác lỗ hổng SQL injection trên ứng dụng web?
-•	Union operator (Toán tử Union).
-Giải thích: Các kỹ thuật khai thác SQL injection bao gồm:
-•	Union operator: Dùng khi một lỗ hổng SQL injection cho phép kết hợp hai truy vấn SELECT thành một kết quả.
-•	Boolean: Dùng để kiểm tra các điều kiện đúng hay sai.
-•	Error-based: Dùng để buộc cơ sở dữ liệu sinh ra lỗi giúp cải thiện và tinh chỉnh tấn công.
-•	Out-of-band: Dùng để lấy dữ liệu từ cơ sở dữ liệu qua một kênh khác.
-•	Time delay: Dùng các lệnh cơ sở dữ liệu để tạo độ trễ trong phản hồi.
-________________________________________
-14. Truy vấn SQL nào trong câu lệnh SQL select * from users where user = "admin"; là gì?
-•	Static query (Truy vấn tĩnh).
-Giải thích: Truy vấn tĩnh không chứa dữ liệu có thể được diễn giải và thường không dễ bị SQL injection.
-________________________________________
-15. Một công ty sử dụng dịch vụ Microsoft Active Directory để quản lý xác thực và phân quyền cho các máy trạm nhân viên. Công ty thuê một chuyên gia bảo mật để thực hiện kiểm tra thâm nhập tuân thủ. Loại kiểm tra thâm nhập nào có thể được sử dụng để xác minh cấu hình đúng của dịch vụ Active Directory?
-•	LDAP injection.
-Giải thích: Dịch vụ Active Directory sử dụng LDAP để cung cấp dịch vụ xác thực và truy cập vào máy chủ thư mục. Lỗ hổng LDAP injection có thể được khai thác nếu ứng dụng không kiểm tra đầu vào đúng cách.
-________________________________________
-16. Cái nào là thực hành quản lý phiên web nguy hiểm?
-•	Bao gồm session ID trong URL.
-Giải thích: Bao gồm session ID trong URL là một thực hành nguy hiểm vì có thể dẫn đến tấn công session fixation hoặc bị lộ khi URL bị chia sẻ hoặc lưu trữ không an toàn.
-________________________________________
-17. Một ứng dụng web cấu hình cookie của client với cờ HTTPOnly. Cờ này có tác dụng gì?
-•	Buộc trình duyệt web chỉ xử lý cookie này bởi máy chủ.
-Giải thích: Cờ HTTPOnly ngăn không cho mã hoặc script trên client truy cập cookie, chỉ cho phép máy chủ xử lý cookie đó.
-________________________________________
-18. Một tổ chức đã phát triển chính sách bảo mật mạng yêu cầu các router và switch mới mua phải được cấu hình với các biện pháp bảo mật tiên tiến trước khi triển khai vào mạng sản xuất. Mối đe dọa nào mà chính sách này giảm thiểu?
-•	Tấn công với mật khẩu mặc định.
-Giải thích: Việc sử dụng mật khẩu mặc định có thể bị kẻ tấn công lợi dụng để truy cập vào các thiết bị mạng. Thay đổi mật khẩu mặc định là biện pháp bảo mật quan trọng.
-________________________________________
-19. Kẻ tấn công gửi một yêu cầu đến một cổng trường đại học trực tuyến với thông tin: SELECT * FROM group WHERE attack = 'network' AND a-type LIKE 'ping%'; Kẻ tấn công cố khai thác lỗ hổng loại nào?
-•	HTTP parameter pollution (Ô nhiễm tham số HTTP).
-Giải thích: Ô nhiễm tham số HTTP xảy ra khi nhiều tham số HTTP có cùng tên, gây ra việc ứng dụng hiểu sai giá trị. Kẻ tấn công có thể lợi dụng lỗ hổng này để vượt qua xác thực đầu vào hoặc sửa đổi giá trị biến nội bộ.
-________________________________________
-20. Một công ty thuê một công ty bảo mật để đánh giá bảo mật của máy chủ web. Để kiểm tra các lỗ hổng cross-site scripting (XSS), tester sẽ sử dụng chuỗi nào?
-•	Trong một trường nhập liệu người dùng trong biểu mẫu web.
-Giải thích: Tấn công XSS có thể được thực hiện qua các trường nhập liệu người dùng trong biểu mẫu web hoặc qua thanh địa chỉ trình duyệt.
-________________________________________
+xyz-company.com: Host.
+2457: Port.
+support/file: Path.
+ftp: Scheme.
+name=intro&r=true: Query-string.
+id=65: Path-segment-params.
+4. Chức năng nào được HTTP 2.0 cung cấp để cải thiện hiệu suất so với HTTP 1.1? => HTTP 2.0 cung cấp multiplexing thông điệp HTTP và yêu cầu ít thông điệp hơn để tải nội dung web.
+5. Tại sao các nhà phát triển ứng dụng nên thay đổi tên session ID được sử dụng bởi các framework phát triển ứng dụng web phổ biến? => Các tên session ID này có thể được sử dụng để xác định framework ứng dụng đã được sử dụng.
+6. Một người dùng đang sử dụng trang web mua sắm trực tuyến để đặt mua laptop. Cơ chế nào được trang web sử dụng để duy trì xác thực người dùng một cách an toàn trong quá trình mua sắm? => Session ID.
+7. Cách tốt nhất để giảm thiểu tấn công session fixation là gì? => Đảm bảo session ID được sử dụng chỉ sau khi người dùng hoàn thành xác thực.
+8. Hai thuộc tính nào có thể được thiết lập trong cookie của ứng dụng web để chỉ ra đó là cookie cố định (persistent cookie)? => Expires, Max-Age.
+9. Tổ chức quốc tế nào chuyên giáo dục các chuyên gia trong ngành, tạo công cụ và thúc đẩy các phương pháp bảo mật tốt nhất cho các ứng dụng web và hệ thống cơ sở hạ tầng? => Open Web Application Security Project (OWASP).
+10. Thành phần nào trong câu lệnh dưới đây có khả năng là thông tin đầu vào từ người dùng trong biểu mẫu web? => a-type.
+11. Mô tả nào dưới đây là một ví dụ của tấn công SQL injection theo kiểu out-of-band? => Kẻ tấn công gửi yêu cầu SQL và nhận kết quả qua một kênh khác, ví dụ như qua email.
+12. Một kẻ tấn công thực hiện tấn công SQL injection trên một trang web bằng cách gửi nhiều câu lệnh SQL cụ thể để tái tạo thông tin cần thiết. Đây là kiểu tấn công SQL injection nào? => Blind SQL injection.
+13. Kẻ tấn công thực hiện tấn công SQL injection trên ứng dụng web bằng cách cố gắng buộc ứng dụng yêu cầu cơ sở dữ liệu backend thực hiện nhiều truy vấn SELECT. Kỹ thuật nào khai thác lỗ hổng SQL injection trên ứng dụng web? => Union operator (Toán tử Union).
+14. Truy vấn SQL nào trong câu lệnh SQL select * from users where user = "admin"; là gì? => Static query (Truy vấn tĩnh).
+15. Một công ty sử dụng dịch vụ Microsoft Active Directory để quản lý xác thực và phân quyền cho các máy trạm nhân viên. Công ty thuê một chuyên gia bảo mật để thực hiện kiểm tra thâm nhập tuân thủ. Loại kiểm tra thâm nhập nào có thể được sử dụng để xác minh cấu hình đúng của dịch vụ Active Directory? => LDAP injection.
+16. Cái nào là thực hành quản lý phiên web nguy hiểm? => Bao gồm session ID trong URL.
+17. Một ứng dụng web cấu hình cookie của client với cờ HTTPOnly. Cờ này có tác dụng gì? => Buộc trình duyệt web chỉ xử lý cookie này bởi máy chủ.
+18. Một tổ chức đã phát triển chính sách bảo mật mạng yêu cầu các router và switch mới mua phải được cấu hình với các biện pháp bảo mật tiên tiến trước khi triển khai vào mạng sản xuất. Mối đe dọa nào mà chính sách này giảm thiểu? => Tấn công với mật khẩu mặc định.
+19. Kẻ tấn công gửi một yêu cầu đến một cổng trường đại học trực tuyến với thông tin: SELECT * FROM group WHERE attack = 'network' AND a-type LIKE 'ping%'; Kẻ tấn công cố khai thác lỗ hổng loại nào? => HTTP parameter pollution (Ô nhiễm tham số HTTP).
+20. Một công ty thuê một công ty bảo mật để đánh giá bảo mật của máy chủ web. Để kiểm tra các lỗ hổng cross-site scripting (XSS), tester sẽ sử dụng chuỗi nào? => Trong một trường nhập liệu người dùng trong biểu mẫu web.
 21. Theo OWASP, ba quy tắc nào là cần thiết để ngăn ngừa tấn công XSS?
-•	Sử dụng mã hóa HTML trước khi chèn dữ liệu không đáng tin cậy vào nội dung thẻ HTML.
-•	Sử dụng mã hóa thuộc tính trước khi chèn dữ liệu không đáng tin cậy vào thuộc tính HTML.
-•	Sử dụng mã hóa JavaScript trước khi chèn dữ liệu không đáng tin cậy vào các giá trị dữ liệu JavaScript.
-Giải thích: Các quy tắc OWASP bao gồm việc sử dụng các hệ thống mẫu tự động mã hóa và mã hóa các giá trị dữ liệu không đáng tin cậy trước khi chèn vào các phần tử HTML hoặc JavaScript.
-________________________________________
-22. Sau một số nỗ lực do thám, kẻ tấn công xác định được một máy chủ web được lưu trữ trên hệ thống Linux. Kẻ tấn công nhập URL sau đây: http://192.168.46.82:45/vulnerabilities/fi/?page=../../../../../etc/httpd/httpd.conf. Loại lỗ hổng web nào đang bị khai thác?
-•	Directory traversal (Dò tìm thư mục).
-Giải thích: Tấn công directory traversal (hoặc path traversal) cho phép kẻ tấn công truy cập các tệp và thư mục nằm ngoài thư mục gốc của web server. Trong trường hợp này, kẻ tấn công đang cố gắng xem tệp cấu hình của web server.
-________________________________________
-23. Kẻ tấn công nhập URL sau đây để khai thác lỗ hổng trong một ứng dụng web: http://192.168.47.8:76/files/fi/?page=http://malicious.h4cker.org/cookie.html. Loại lỗ hổng nào mà kẻ tấn công cố khai thác?
-•	Remote file inclusion (RFI) - Bao gồm tệp từ xa.
-Giải thích: Lỗ hổng RFI cho phép kẻ tấn công thực thi mã từ xa trên máy chủ của nạn nhân, dẫn đến việc chạy nội dung web từ máy chủ tấn công.
-________________________________________
-24. Do một thực hành mã hóa không an toàn, kẻ tấn công có thể khai thác và hoàn toàn xâm nhập vào ứng dụng hoặc hệ thống cơ sở hạ tầng. Thực hành mã hóa không an toàn nào đã tạo ra mối đe dọa này?
-•	Sử dụng mật khẩu cứng (hard-coded credentials).
-Giải thích: Việc sử dụng mật khẩu cứng trong mã là một lỗ hổng nghiêm trọng mà kẻ tấn công có thể tận dụng để xâm nhập hoàn toàn vào ứng dụng hoặc hệ thống.
-________________________________________
-25. Quy tắc tốt nhất để giảm thiểu lỗ hổng do thiếu xử lý lỗi đúng cách trong một ứng dụng là gì?
-•	Sử dụng một bộ thông báo lỗi hợp lý cung cấp thông tin có ý nghĩa cho người dùng nhưng không cung cấp thông tin hữu ích cho kẻ tấn công.
-Giải thích: Xử lý lỗi không đúng cách có thể cung cấp thông tin cho kẻ tấn công, giúp họ thực hiện các tấn công bổ sung. Cách tốt nhất là xử lý thông báo lỗi một cách thận trọng và chỉ cung cấp thông tin cần thiết cho người dùng và đội ngũ phát triển.
-Chương 7 Quiz – Giới thiệu về Ethical Hacking và Penetration Testing
+Sử dụng mã hóa HTML trước khi chèn dữ liệu không đáng tin cậy vào nội dung thẻ HTML.
+Sử dụng mã hóa thuộc tính trước khi chèn dữ liệu không đáng tin cậy vào thuộc tính HTML.
+Sử dụng mã hóa JavaScript trước khi chèn dữ liệu không đáng tin cậy vào các giá trị dữ liệu JavaScript.
+22. Sau một số nỗ lực do thám, kẻ tấn công xác định được một máy chủ web được lưu trữ trên hệ thống Linux. Kẻ tấn công nhập URL sau đây: http://192.168.46.82:45/vulnerabilities/fi/?page=../../../../../etc/httpd/httpd.conf. Loại lỗ hổng web nào đang bị khai thác? => Directory traversal (Dò tìm thư mục).
+23. Kẻ tấn công nhập URL sau đây để khai thác lỗ hổng trong một ứng dụng web: http://192.168.47.8:76/files/fi/?page=http://malicious.h4cker.org/cookie.html. Loại lỗ hổng nào mà kẻ tấn công cố khai thác =>Remote file inclusion (RFI) - Bao gồm tệp từ xa.
+24. Do một thực hành mã hóa không an toàn, kẻ tấn công có thể khai thác và hoàn toàn xâm nhập vào ứng dụng hoặc hệ thống cơ sở hạ tầng. Thực hành mã hóa không an toàn nào đã tạo ra mối đe dọa này? => Sử dụng mật khẩu cứng (hard-coded credentials).
+25. Quy tắc tốt nhất để giảm thiểu lỗ hổng do thiếu xử lý lỗi đúng cách trong một ứng dụng là gì? => Sử dụng một bộ thông báo lỗi hợp lý cung cấp thông tin có ý nghĩa cho người dùng nhưng không cung cấp thông tin hữu ích cho kẻ tấn công.
+
+# Chương 7:
 
 1. Thuật ngữ nào là đặc điểm thiết yếu của điện toán đám mây theo định nghĩa trong NIST SP 800-145?
 •	Resource pooling (Tích hợp tài nguyên).
@@ -851,12 +482,11 @@ ________________________________________
 •	Physical Giải thích: Các kiểm soát vật lý sử dụng các biện pháp an ninh để ngăn ngừa hoặc ngăn chặn truy cập trái phép vào các khu vực nhạy cảm hoặc vật liệu. Kiểm soát vestibule truy cập là một ví dụ của kiểm soát vật lý.
 ________________________________________
 15. Khớp thuật ngữ với mô tả tương ứng.
-Giải thích:
-•	False Negative: Các hoạt động độc hại không được phát hiện bởi thiết bị an ninh mạng.
-•	True Negative: Một thiết bị phát hiện xâm nhập nhận dạng một hoạt động là hành vi chấp nhận được và hoạt động này thực sự là hợp lệ.
-•	False Positive: Một thiết bị bảo mật phát ra cảnh báo, nhưng không có hoạt động độc hại hoặc cuộc tấn công thực tế xảy ra.
-•	True Positive: Xác định chính xác một cuộc tấn công bảo mật hoặc sự kiện độc hại.
-________________________________________
+False Negative: Các hoạt động độc hại không được phát hiện bởi thiết bị an ninh mạng.
+True Negative: Một thiết bị phát hiện xâm nhập nhận dạng một hoạt động là hành vi chấp nhận được và hoạt động này thực sự là hợp lệ.
+False Positive: Một thiết bị bảo mật phát ra cảnh báo, nhưng không có hoạt động độc hại hoặc cuộc tấn công thực tế xảy ra.
+True Positive: Xác định chính xác một cuộc tấn công bảo mật hoặc sự kiện độc hại.
+
 16. Loại sự kiện nào còn được gọi là "trình kích hoạt vô hại"?
 •	False Positive Giải thích: False positive (cảnh báo giả) còn được gọi là "trình kích hoạt vô hại". Đây là những cảnh báo sai lệch khiến người dùng hiểu nhầm về một mối đe dọa không thực sự tồn tại.
 ________________________________________
@@ -865,39 +495,17 @@ ________________________________________
 ________________________________________
 18. Loại sự kiện nào là các hoạt động độc hại không được phát hiện bởi thiết bị bảo mật mạng?
 •	False Negatives Giải thích: False negatives là các hoạt động độc hại mà thiết bị bảo mật mạng không phát hiện được. Điều này có thể dẫn đến các lỗ hổng bảo mật nghiêm trọng.
-________________________________________
-19. Loại sự kiện nào xảy ra khi thiết bị phát hiện xâm nhập nhận diện một hoạt động là hành vi chấp nhận được và hoạt động đó thực sự hợp lệ?
-•	True Negatives Giải thích: True negatives là khi thiết bị phát hiện một hoạt động hợp lệ mà không gây ra mối đe dọa nào.
-________________________________________
-20. Loại sự kiện nào là việc xác định thành công một cuộc tấn công bảo mật?
-•	True Positive Giải thích: True positives là những lần phát hiện thành công các cuộc tấn công bảo mật hoặc sự kiện độc hại.
-________________________________________
-21. Ví dụ nào của kiểm soát kỹ thuật được khuyến nghị để giảm thiểu và ngăn ngừa các lỗ hổng như cross-site scripting, cross-site request forgery, SQL injection và command injection?
-•	User input sanitization Giải thích: Việc xác thực và làm sạch đầu vào của người dùng (input sanitization) là một phương pháp tốt để ngăn ngừa các lỗ hổng như XSS, CSRF, SQL injection và command injection.
-________________________________________
-22. Ví dụ nào của kiểm soát hành chính giúp quản lý những gì người dùng có thể làm ở cả cấp độ rộng và chi tiết?
-•	RBAC (Role-Based Access Control) Giải thích: Role-based access control (RBAC) là một phương pháp kiểm soát quyền truy cập dựa trên vai trò của người dùng trong tổ chức. Nó cho phép quản lý quyền truy cập ở cấp độ rộng và chi tiết.
-________________________________________
-23. Tài liệu có tiêu đề "Building an Information Technology Security Awareness and Training Program" định nghĩa ngắn gọn lý do tại sao giáo dục và đào tạo bảo mật lại quan trọng đối với người dùng. Tài liệu này định nghĩa cách cải thiện hoạt động bảo mật của một tổ chức. Tài liệu nào đang được mô tả?
-•	NIST SP 800-50 Giải thích: NIST SP 800-50, "Building an Information Technology Security Awareness and Training Program", định nghĩa cách thức xây dựng chương trình đào tạo và nâng cao nhận thức bảo mật cho người dùng.
-________________________________________
-24. Điểm số mà CVSS cung cấp được giải thích như thế nào?
-•	Scores are rated from 0 to 10, with 10 being the most severe Giải thích: CVSS (Common Vulnerability Scoring System) cung cấp điểm số từ 0 đến 10, với 10 là mức độ nghiêm trọng cao nhất của một lỗ hổng.
-________________________________________
-25. Hệ thống cứng hóa thuộc nhóm kiểm soát nào?
-•	Technical Giải thích: System hardening (cứng hóa hệ thống) là một ví dụ của kiểm soát kỹ thuật. Nó liên quan đến việc áp dụng các biện pháp bảo mật tốt nhất, bản vá và các cấu hình khác để giảm thiểu hoặc khắc phục các lỗ hổng trong hệ thống và ứng dụng.
+19. Loại sự kiện nào xảy ra khi thiết bị phát hiện xâm nhập nhận diện một hoạt động là hành vi chấp nhận được và hoạt động đó thực sự hợp lệ? => True Negatives. 
+20. Loại sự kiện nào là việc xác định thành công một cuộc tấn công bảo mật? => True Positive.
+21. Ví dụ nào của kiểm soát kỹ thuật được khuyến nghị để giảm thiểu và ngăn ngừa các lỗ hổng như cross-site scripting, cross-site request forgery, SQL injection và command injection? => User input sanitization.
+22. Ví dụ nào của kiểm soát hành chính giúp quản lý những gì người dùng có thể làm ở cả cấp độ rộng và chi tiết? => RBAC (Role-Based Access Control)
+23. Tài liệu có tiêu đề "Building an Information Technology Security Awareness and Training Program" định nghĩa ngắn gọn lý do tại sao giáo dục và đào tạo bảo mật lại quan trọng đối với người dùng. Tài liệu này định nghĩa cách cải thiện hoạt động bảo mật của một tổ chức. Tài liệu nào đang được mô tả? => NIST SP 800-50 
+24. Điểm số mà CVSS cung cấp được giải thích như thế nào? => Scores are rated from 0 to 10, with 10 being the most severe
+25. Hệ thống cứng hóa thuộc nhóm kiểm soát nào? => Technical 
 
-#############################################################################
-#############################     Example 10    #############################
-#############################################################################
-1. Hai thành phần nào là cấu trúc logic trong lập trình? (Chọn hai.) => Toán tử Boolean, Câu lệnh điều kiện
-2. Hai mục nào là cấu trúc dữ liệu trong các ngôn ngữ lập trình? (Chọn hai.) => Mảng, Danh sách
+# Example 10
+
 3. Hai mục nào có thể được bao gồm trong thư viện? (Chọn hai.) => Các thủ tục con, Mẫu tin nhắn
-4. Định nghĩa của thủ tục trong phần mềm ứng dụng là gì? => Là một đoạn mã được tạo ra để thực hiện một nhiệm vụ cụ thể.
-5. Cấu trúc dữ liệu trong ngôn ngữ lập trình nào là một biến đặc biệt có thể chứa nhiều giá trị cùng lúc? => Mảng
-6. Thuật ngữ nào mô tả thành phần ngôn ngữ lập trình như JavaScript Object Notation (JSON)? => Cấu trúc dữ liệu
-7. Cấu trúc dữ liệu trong Python được đại diện trong ví dụ dưới đây là gì? cves = [‘CVE-2022-0945’, ‘CVE-2023-1234’, ‘CVE-2022-0987’] => Danh sách
-8. Thành phần nào của ngôn ngữ lập trình thực hiện các nhiệm vụ tương tự nhau? => Thủ tục và hàm
 9. Định nghĩa của thư viện trong phần mềm ứng dụng là gì? => Là bộ sưu tập các tài nguyên có thể được tái sử dụng bởi các chương trình.
 10. Công cụ truy vấn cơ sở dữ liệu tên miền nào đã bị hạn chế bởi Quy định Bảo vệ Dữ liệu Chung (GDPR) của Liên minh Châu Âu để bảo vệ quyền riêng tư? => Whois
 11. Hai công cụ nào có thể được sử dụng để thực hiện thu thập thông tin chủ động? (Chọn hai.) => Zenmap, Enum4linux
