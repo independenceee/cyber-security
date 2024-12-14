@@ -138,6 +138,7 @@ Ngoài các mức kiểm thử chính, còn có thể bao gồm:
 Mỗi mức kiểm thử đóng vai trò quan trọng trong việc đảm bảo chất lượng toàn diện của sản phẩm phần mềm.
 
 
+
 8. Hãy nêu một ví dụ về lỗi phần mềm và ảnh hưởng của nó đối với người dùng cũng như nhà sản xuất phần mềm ?
 9. Nêu sự khác biệt giữa hai quá trình: kiểm định và thẩm định trong quy trình kiểm thử phần mềm ?
 10. Quan niệm sau đây là đúng hay sai và hãy đưa ra lý do của mình: “Kiểm thử phần mềm là qui trình chứng minh phần mềm không có lỗi” ?
