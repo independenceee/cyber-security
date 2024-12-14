@@ -151,9 +151,7 @@ Mỗi mức kiểm thử đóng vai trò quan trọng trong việc đảm bảo 
 * Một giá trị biến bị sai.
 * Một số lỗi toán học như chia cho số 0.
 * Sai sót trong thuật toán sử lý dữ liệu.
-+ Đặc điểm: -
-- Fault (Khiếm khuyết):
-- Failure (Thất bại):
+
 
 13. Hãy trình bày khái niệm về mục đích của một kiểm thử viên trong kiểm thử phần mềm ?
 14. Tại sao phải kiểm thử phần mềm? Hãy trình bày hiểu biết của bạn về các quan niệm không đúng trong kiểm thử phần mềm ?
