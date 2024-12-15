@@ -1,6 +1,5 @@
 I. Lý thuyết
 
-1. Khái niệm kiểm thử phần mềm, kiểm định, Thẩm định. Đặc điểm của kiểm thử phần mềm ?
 2. So sánh giữa kiểm định và thẩm định.
 
 | **Tiêu chí**                  | **Kiểm định (Verification)**                                       | **Thẩm định (Validation)**                                     |
