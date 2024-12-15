@@ -16,12 +16,6 @@ I. Lý thuyết
 | **Tính chất**                 | Mang tính chất phòng ngừa lỗi.                                    | Mang tính chất phát hiện lỗi.                                  |
 | **Kết quả**                   | Kết quả là tài liệu hoặc mô hình đạt yêu cầu.                     | Kết quả là một sản phẩm phần mềm phù hợp với thực tế sử dụng.   |
 
-## **Kết luận**
-- **Kiểm định** tập trung vào việc đảm bảo quy trình phát triển được thực hiện đúng (đúng theo yêu cầu kỹ thuật và tài liệu).
-- **Thẩm định** tập trung vào việc xác minh rằng sản phẩm cuối cùng đúng với mong muốn và nhu cầu của người dùng.
-
-Hai quá trình này bổ trợ lẫn nhau để đảm bảo chất lượng phần mềm toàn diện.
-
 3. Quy trình kiểm thử phần mềm gồm những bước nào ?
 
 # Quy Trình Kiểm Thử Phần Mềm
