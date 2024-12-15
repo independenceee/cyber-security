@@ -1,19 +1,6 @@
 I. Lý thuyết
 
 1. Khái niệm kiểm thử phần mềm, kiểm định, Thẩm định. Đặc điểm của kiểm thử phần mềm ?
-- Kiểm thử phần mềm: là quá trình đánh giá một hệ thống hoặc thành phần phần mềm để tìm lỗi, đảm bảo chất lượng và xác minh rằng sản phẩm hoạt động đúng như mong đợi. Quá trình này bao gồm thực hiện phần mềm với mục đích xác định lỗi hoặc các vấn đề cần khắc phục.
-- Kiếm định: là quá trình đánh giá xem liệu sản phẩm phần mềm có tuân thủ các đặc tả yêu cầu kỹ thuật, tài liệu thiết kế hay không. Mục tiêu là đảm bảo rằng sản phẩm "làm đúng việc nó phải làm". Đây thường là một hoạt động tĩnh như kiểm tra mã nguồn, tài liệu hoặc review.
-- Thẩm định: Là quá trình kiểm tra xem liệu sản phẩm phần mềm có đáp ứng yêu cầu thực tế của người dùng hay không. Mục tiêu là đảm bảo rằng sản phẩm "làm điều đúng đắn". Đây là một hoạt động động, thường liên quan đến việc chạy phần mềm.
-- Đặc điểm của kiểm thử phần mềm: 
-+ Không bao giờ chứng minh được phần mềm không có lỗi: Kiểm thử chỉ có thể chỉ ra sự hiện diện của lỗi, không phải sự vắng mặt của lỗi.
-+ Kiểm thử là một quá trình sáng tạo: Cần phải hiểu rõ cách hệ thống hoạt động và dự đoán các tình huống có thể phát sinh lỗi.
-+ Kiểm thử phụ thuộc vào bối cảnh: Các phương pháp kiểm thử và tiêu chí chất lượng sẽ khác nhau tùy thuộc vào loại phần mềm (web, mobile, enterprise, etc.).
-+ Kiểm thử không chỉ là tìm lỗi: Nó còn giúp cải thiện chất lượng sản phẩm, tăng tính ổn định và độ tin cậy.
-+ Có thể thực hiện ở mọi giai đoạn phát triển phần mềm: Từ khi thiết kế yêu cầu đến khi triển khai, kiểm thử đều có thể diễn ra.
-+ Cần được lập kế hoạch cẩn thận: Quy trình kiểm thử cần được định nghĩa rõ ràng, với các trường hợp thử nghiệm, kịch bản kiểm thử và mục tiêu cụ thể.
-+ Có giới hạn về thời gian và nguồn lực: Không thể kiểm thử toàn bộ các tình huống hoặc trạng thái của phần mềm; cần tập trung vào các khu vực có nguy cơ cao.
-+ Kiểm thử nên độc lập: Để đảm bảo khách quan, đội ngũ kiểm thử nên độc lập với đội phát triển.
-
 2. So sánh giữa kiểm định và thẩm định.
 
 | **Tiêu chí**                  | **Kiểm định (Verification)**                                       | **Thẩm định (Validation)**                                     |
